@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root
+{
+	--bg-color: #ffffff;
+
+	--primary-color-purple: #8D5AD5;
+	--primary-color-green: #0CBC8B;
+	--primary-color-lightRed: #FEADAD;
+
+	--gradient-blue: #3083DC;
+
+	--paraFont: 'Poppins', sans-serif;
+}
+
+/* @font-face {
+	:font-family: "Clash Display";
+    src: url("fonts/ClashDisplay_Complete/ClashDisplay-Regular.otf");
+} */
+
+.fade
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(35, 35, 35, 0.8);
+    z-index: 99999;
+
+    display: none;
+}
+
+.webForms
+{
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+
+    background-color: var(--bg-color);
+
+    width: 900px;
+    height: auto;
+
+    border-radius: 12px;
+    outline: 4px solid var(--bg-color);
+    outline-offset: 4px;
+    
+    transition: 0.5s, opacity 300ms ease-in-out;
+
+    z-index: 999999;
+
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+.webForms .imgSection
+{
+    width: 40%;
+    background-color: #ffe7e7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSection img
+{
+    width: 450px;
+    height: auto;
+}
+
+.webForms .contentSection
+{
+    width: 60%;
+    padding: 20px 40px;
+
+    position: relative;
+}
+
+.webForms .contentSection
+{
+    overflow-y: scroll;
+}
+
+.webForms .contentSection::-webkit-scrollbar
+{
+    display: none;
+}
+
+.webForms .formHead
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webForms .formHead span
+{
+    font: 700 32px "clash display";
+    text-transform: capitalize;
+}
+
+.contentSection .formClose
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formClose .formLogo
+{
+    padding-right: 10px;
+}
+
+.formLogo img
+{
+    width: 60px;
+    height: auto;
+}
+
+.formClose .formClose_btn button
+{
+    font: 500 12px var(--paraFont);
+    text-transform: capitalize;
+    
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgb(210, 210, 210);
+
+    cursor: pointer;
+    padding : 8px 0 8px 10px;
+}
+
+.webForms form
+{
+    margin-top: 18px;
+}
+
+.webForms form .formGroup
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 14px 0;
+}
+
+.formGroup label
+{
+    font: 500 14px var(--paraFont);
+    text-transform: capitalize;
+
+    margin-bottom: 4px;
+
+    display: flex;
+    align-items: center;
+}
+
+.formGroup label img
+{
+    width: 16px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.formGroup input
+{
+    width: 100%;
+    height: 34px;
+
+    border-radius: 6px;
+    border: none;
+    outline: none;
+
+    padding: 0 10px;
+    margin-top: 4px;
+
+    font: 500 14px var(--paraFont);
+
+    background-color: transparent;
+    outline: 2px solid #8d5ad576;
+    outline-offset: 3px;
+    overflow: hidden;
+}
+
+.formGroup input:focus
+{
+    outline: 2px solid #8d5ad5;
+}
+
+.passInput
+{
+    position: relative;
+}
+
+.passInput .passInput_icon
+{
+    width: 50px;
+    /* height: 100%; */
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.passInput_icon i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+.passInput_icon .fa-eye
+{
+    display: none;
+}
+
+.passInput_icon .fa-eye-slash
+{
+    display: block;
+}
+
+.formGroup .forgetPassword
+{
+    opacity: 0.7;
+    margin-top: 6px;
+    text-align: right;
+}
+
+.forgetPassword a
+{
+    font: 500 12px var(--paraFont);
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+}
+
+.contentSection .formSubmit
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+.formSubmit .formSubmit_btn
+{
+    width: 50%;
+    height: 32px;
+
+    border: none;
+    background-color: transparent;
+    border-radius: 35px;
+
+    outline: 2px solid var(--primary-color-purple);
+    outline-offset: 3px;
+
+    font: 600 14px var(--paraFont);
+    text-transform: capitalize;
+    color: var(--primary-color-purple);
+
+    transition: 0.3s;
+}
+
+.formSubmit .formSubmit_btn:hover
+{
+    background-color: var(--primary-color-purple);
+    color: var(--bg-color);
+}
+
+.contentSection .breakForm
+{
+    text-align: center;
+    text-transform: uppercase;
+    font: 600 12px var(--paraFont);
+
+    margin: 8px 0;
+    opacity: 0.6;
+    position: relative;
+}
+
+.contentSection .breakForm::before,.breakForm::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    width: 36%;
+    height: .5px;
+
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.breakForm::before
+{
+    left: 10%;
+}
+
+.breakForm::after
+{
+    right: 10%;
+}
+
+.contentSection .logInWith_area .logInWith_head
+{
+    font: 600 14px "clash display";
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.logInWith_area .logInWith_icon
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logInWith_area .logInWith_icon a
+{
+    margin: 0 8px;
+}
+
+.logInWith_area .logInWith_icon a img
+{
+    width: 30px;
+    height: auto;
+}
+
+.contentSection .signUp_area
+{
+    text-align: center;
+}
+
+.contentSection .signUp_area a
+{
+    font: 400 12px var(--paraFont);
+    text-transform: capitalize;
+    color: rgb(80, 80, 80);
+}
+
+
+
+
+
+/* ------ Sign In Form --------- */
+
+.SignIn_form .imgSection
+{
+    background-color: #dec6ff;
+}
+
+.SignIn_form .formSubmit .formSubmit_btn
+{
+    margin-top: 12px;
+}
+
+
+
+
+
+.fade_open
+{
+    display: block;
+}
+
+.logIn_open, .SignIn_open
+{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
