@@ -1,0 +1,99 @@
+@media screen and (max-width: 1200px)
+{
+    .whyUs-img-contain img
+    {
+        width: 400px;
+        height: auto;
+    }
+
+    .whyUs-img-contain .parallax-element img
+    {
+        width: 60px;
+    }
+
+
+    .whyUs-body-contain
+    {
+        padding-left: 30px;
+    }
+
+    .why-us-points li .point-icon img
+    {
+        width: 56px;
+        padding: 4px;
+    }
+
+    .point-text .point-text-head
+    {
+        font: 500 18px "biennale-bld";
+    }
+
+    .point-text .point-text-para
+    {
+        font: 500 13px var(--paraFont);
+    }
+
+    .why-us-btn-contain
+    {
+        margin-left: 70px;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .whyUs_card_container
+    {
+        flex-direction: column;
+    }
+
+    .whyUs-body-contain
+    {
+        max-width: 768px;
+        padding-left: 0px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .whyUs-img-contain img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .why-us-points li
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-us-points li .point-text
+    {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .point-text .point-text-head
+    {
+        font: 500 16px "biennale-bld";
+    }
+
+    .point-text .point-text-para
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .why-us-btn-contain
+    {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

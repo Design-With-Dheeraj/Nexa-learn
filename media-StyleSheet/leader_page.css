@@ -1,0 +1,118 @@
+@media screen and (max-width: 1024px)
+{
+    .swiper-slide 
+    {
+        padding: 20px 10px;
+    }
+
+    .fadeEffect
+    {
+        display: block;
+    }
+
+    .leaderParticles
+    {
+        display: none;
+    }
+
+    .leader_card
+    {
+        width: 100%;
+        height: auto;
+
+        flex-direction: column;
+        border-radius: 12px;
+    }
+
+    .leader_card .leaderImg_box
+    {
+        width: 380px;
+        height: 200px;
+    }
+
+    .leaderImg_box img
+    {
+        width: 100%;
+        height: auto;
+
+        transform: translateY(-50px);
+    }
+
+    .leader_card .leaderContent
+    {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .leader_card .leaderInfoPara
+    {
+        font: 500 13px var(--paraFont);
+        margin-top: 12px;
+        position: relative;
+    }
+
+    .leaderParicles1
+    {
+        left: -20px;
+        bottom: -40px;
+        width: 80px;
+        height: auto;
+    }
+
+    .swiperBtn_containar
+    {
+        right: -20px;
+        top: -50px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .leader_card .leaderDesignation
+    {
+        font: 500 12px var(--paraFont);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .leader_card_container
+    {
+        margin-top: 10px;
+    }
+
+
+    .leaderContent .leaderName
+    {
+        font: 700 18px "biennale-bld";
+    }
+
+    .leader_card .leaderInfoPara
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .leader_card .leaderImg_box
+    {
+        width: 100%;
+        height: 140px;
+    }
+
+    .leaderImg_box img
+    {
+        transform: translateY(-30px);
+    }
+
+    .swiperBtn_containar
+    {
+        top: 96%;
+    }
+
+    .swiperBtn img
+    {
+        width: 36px;
+        height: auto;
+    }
+}

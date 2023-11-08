@@ -1,0 +1,120 @@
+ /* ----- Achievement Page Code Start ----- */
+
+@media screen and (max-width: 1250px)
+{
+     .achive_page
+     {
+         width: 96%;
+     }
+
+    .content_box .value
+    {
+        font: 700 42px "Clash Display";
+    }
+     
+    .content_box p
+    {
+        font: 600 12px var(--paraFont);
+    }
+
+    .content_box .achieve-icon img
+    {
+        width: 24px;
+        height: auto;
+        color: #003c7b;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .achive_content_container .content_box
+    {
+        text-align: center;
+    }
+
+    .content_box span
+    {
+        font: 700 48px "Clash Display";
+    }
+
+    .achive_page_particles
+    {
+        position: absolute;
+        right: -30px;
+        bottom: -30px;
+
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 769px)
+{
+    .achive_page
+    {
+        padding: 20px;
+        bottom: -140px;
+    }
+    .content_box span
+    {
+        font: 700 38px "Clash Display";
+    }
+
+    .achive_page .achive_content_container
+    {
+        display: grid;
+        grid: auto auto / 200px 200px;
+    }
+
+    .achive_content_container .content_box
+    {
+        padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .achive_content_container .content_box {
+        flex-basis: calc(50% - 20px); /* 2 content boxes per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .achive_page
+    {
+        width: 80%;
+    }
+
+    .achive_content_container .content_box {
+        flex-basis: calc(100% - 20px); /* 1 content box per row */
+    }
+
+    .achive_page .achive_content_container
+    {
+        display: grid;
+        grid: auto auto auto auto / 100%;
+        gap: 10px 0;
+    }
+    
+    .content_box .value
+    {
+        font: 700 32px "Clash Display";
+        margin: 2px;
+    }
+     
+    .content_box p
+    {
+        font: 600 12px var(--paraFont);
+        margin-top: 0px;
+    }
+
+    .content_box .achieve-icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content_box .achieve-icon img
+    {
+        width: 20px;
+    }
+}

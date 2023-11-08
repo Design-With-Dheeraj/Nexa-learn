@@ -1,0 +1,114 @@
+@media screen and (max-width: 1200px)
+{
+    .contactFilter_contants
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .FilterCard_head
+    {
+        margin: 30px 0;
+    }
+
+    .contactFilter_btn button
+    {
+        width: 100%;
+        padding: 12px 0;
+
+        font: 600 10px var(--paraFont);
+    }
+
+
+    .contactFilter_contants
+    {
+        width: 100%;
+    }
+
+    .contactCard_details
+    {
+        font: 500 14px var(--paraFont);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .detailResp
+    {
+        margin: 6px 0;
+    }
+
+
+
+    .chatCard
+    {
+        width: 100%;
+    }
+
+    .inputField label
+    {
+        font: 500 12px var(--paraFont);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .contactFilter_btn button
+    {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .FilterCard_head
+    {
+        font: 500 16px "clash display";
+    }
+
+
+    .contactCard_details
+    {
+        font: 500 12px var(--paraFont);
+    }
+    .detailResp
+    {
+        margin: 4px 0;
+    }
+
+
+    /* ChatCard */
+    .chatCard .chatCard_btn button
+    {
+        padding: 6px 28px;
+    }
+
+
+
+    /* ConnectCard */
+    .connectCard_detail .connectOn::before
+    {
+        position: absolute;
+        top: -30px;
+        left: -10px;
+
+        font: 600 42px "clash display";
+    }
+
+    .connectOn .connectOn_img
+    {
+        padding: 6px;
+    }
+
+    .connectOn_detail
+    {
+        font: 500 12px var(--paraFont);
+        padding-left: 10px;
+    }
+}

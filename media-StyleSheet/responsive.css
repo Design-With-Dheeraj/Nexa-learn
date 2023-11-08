@@ -1,0 +1,317 @@
+/* ----- Home Page Responsive ----- */
+
+@media screen and (max-width: 1250px)
+{
+    .home_page .homePage_content .content_head
+    {
+        font: 600 48px "biennale";
+        line-height: 52px;
+    }
+
+    .homePage_image img
+    {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .home_page .homePage_content .content_head
+    {
+        font: 600 42px "biennale";
+        line-height: 48px;
+    }
+
+    .homePage_image img
+    {
+        width: 450px;
+        height: auto;
+    }
+
+
+
+    /* ----- Brand Section Code ----- */
+    .partner-brand-contain li img
+    {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{   
+    .home_page
+    {
+        min-height: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        padding: 30px 0;
+    }
+
+    .home_page .homePage_content
+    {
+        padding-right: 0px;
+    }
+
+    .contantPage
+    {
+        padding: 0 20px;
+    }
+
+    .navMain .navLinks
+    {
+        padding: 0 20px;
+    }
+
+    .navLinks ul li
+    {
+        margin: 0 10px;
+    }
+
+    .navLinks ul li a
+    {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+
+
+
+
+    .homePage_image img
+    {
+        width: 480px;
+    }
+
+    .parallax-element
+    {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 769px)
+{
+    .homePage_image img
+    {
+        width: 380px;
+    }
+
+    .home_page .homePage_content .content_head
+    {
+        font: 600 32px "biennale";
+        line-height: 38px;
+    }
+
+    .content-sub-head
+    {
+        font: 500 13px var(--paraFont);
+        
+        padding-left: 40px;
+    }
+
+    .content-para
+    {
+        font: 500 13px var(--paraFont);
+        color: rgb(100, 100, 100);
+        margin-top: 12px;
+    }
+
+    .content-sub-head::after
+    {
+        width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px)
+{
+    .homePage_image img
+    {
+        width: 100%;
+    }
+
+    .home_page .homePage_content .content_head
+    {
+        font: 600 24px "biennale";
+        line-height: 30px;
+    }
+
+    /* ----- Brand Section Code ----- */
+    .partner-brand-contain li img
+    {
+        width: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- Importants ClassName Codes Media-Query ------- */
+
+@media screen and (max-width: 769px) 
+{
+    .m-t--100
+    {
+        margin-top: -0px;
+    }
+
+    .footer-m-t--100
+    {
+        margin-top: -160px;
+    }
+
+    .p-t-200
+    {
+        padding-top: 200px;
+    }
+
+    .p-b-100
+    {
+        padding-bottom: 0px;
+    }
+
+    .cnt-p-b-100
+    {
+        padding-bottom: 100px;
+    }
+
+
+
+
+    .page-content-head
+    {
+        font: 700 26px "clash display";
+        margin-top: 6px;
+    }
+
+    .page-head-para
+    {
+        margin-top: 2px;
+    }
+
+    .page-head-para p
+    {
+        font: 500 13px var(--paraFont);
+    }
+
+
+
+    .gradient-back .page-center
+    {
+        padding: 0;
+    }
+
+    .page-content-head .head-grad-shape::after
+    {
+        right: -30px;
+        width: 100px;
+    }
+
+
+
+
+    /* ------ Brand Slider Code ------- */
+
+    .partner-brand-contain
+    {
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    .partner-brand-contain .brand-slider
+    {
+        width: calc(180px * 15);
+    }
+
+    @keyframes slider 
+    {
+        0%
+        {
+            transform: translateX(0);
+        }
+
+        100%
+        {
+            transform: translateX(calc(-180px * 5));
+        }
+    }
+
+    .brand-slider li
+    {
+        width: 180px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px)
+{
+    .m-t--100
+    {
+        margin-top: -150px;
+    }
+
+    .p-t-200
+    {
+        padding-top: 350px;
+    }
+
+    .footer-p-t-200
+    {
+        padding-top: 180px;
+    }
+
+    .spanHead
+    {
+        font: 600 10px var(--paraFont);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .page-content-head
+    {
+        font: 700 22px "clash display";
+        margin-top: 6px;
+        word-spacing: 3px;
+    }
+
+    .page-head-para
+    {
+        margin-top: 2px;
+    }
+
+    .page-head-para p
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .page-content-head .head-shape::after
+    {
+        right: -20px;
+        width: 100px;
+    }
+
+    .page-content-head .cnt-head-shp::after
+    {
+        transform: rotate(180deg);
+        left: -20px;
+    }
+}

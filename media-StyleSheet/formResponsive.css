@@ -1,0 +1,157 @@
+@media screen and (max-width: 1300px)
+{
+    .webForms
+    {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .imgSection img
+    {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .webForms
+    {
+        width: 94%;
+    }
+
+    .imgSection img
+    {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .webForms
+    {
+        flex-direction: column;
+        height: 620px;
+
+        overflow: visible;
+    }
+
+    .webForms .imgSection
+    {
+        width: 100%;
+        height: 30%;
+        border-radius: 12px 12px 0 0;
+        z-index: 1;
+    }
+
+    .imgSection img
+    {
+        width: 340px;
+        height: auto;
+    }
+
+    .webForms .contentSection
+    {
+        width: 100%;
+        height: 68%;
+        padding: 0px 40px 20px;
+        z-index: 9;
+    }
+
+    .webForms .formHead span
+    {
+        font: 600 28px "clash display";
+    }
+
+    .webForms form
+    {
+        margin-top: 0px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .formLogo img
+    {
+        width: 60px;
+        height: auto;
+    }
+
+    .webForms form .formGroup
+    {
+        margin: 0 0 10px;
+    }
+    
+    .formSubmit .formSubmit_btn
+    {
+        width: 40%;
+        height: 28px;
+    }
+
+    .contentSection .logInWith_area .logInWith_head
+    {
+        font: 500 12px "clash display";
+    }
+
+    .logInWith_area .logInWith_icon
+    {
+        margin-top: 6px;
+    }
+
+    .logInWith_area .logInWith_icon a
+    {
+        margin: 0 8px;
+    }
+
+    .logInWith_area .logInWith_icon a img
+    {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .webForms .formHead span
+    {
+        font: 600 22px "clash display";
+    }
+
+    .imgSection img
+    {
+        width: 280px;
+        height: auto;
+    }
+
+    .webForms .contentSection
+    {
+        padding: 0 20px 20px;
+    }
+
+    .webForms form
+    {
+        width: 100%;
+    }
+
+    .formGroup label
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .formGroup label img
+    {
+        width: 12px;
+        margin-right: 4px;
+    }
+
+    .formSubmit .formSubmit_btn
+    {
+        width: 60%;
+        height: 28px;
+    }
+
+    .contentSection .formSubmit
+    {
+        margin-bottom: 10px;
+    }
+}

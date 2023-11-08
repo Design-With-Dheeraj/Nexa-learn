@@ -1,0 +1,57 @@
+/* ----- NavBar Responsive ----- */
+
+@media screen and (max-width: 1024px)
+{
+    .navMain .navLinks
+    {
+        padding: 0 20px;
+    }
+
+    .navLinks ul li
+    {
+        margin: 0 10px;
+    }
+
+    .navLinks ul li a
+    {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .navMain .joinBtn
+    {
+        width: 120px;
+        padding: 8px 0;
+        
+        font: 600 10px var(--paraFont);
+    }
+}
+
+@media screen and (max-width: 769px)
+{
+    .navMain .navLinks
+    {
+        padding: 0;
+    }
+
+    .navMain .navLinks li, .signUp_btn_main
+    {
+        display: none;
+    }
+
+    .navLinks_left .logo img
+    {
+        width: 80px;
+        height: auto;
+    }
+
+    .resNav_bar
+    {
+        display: block;
+    }
+
+    .navMain .joinBtn
+    {
+        display: none;
+    }
+}

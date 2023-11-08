@@ -1,0 +1,34 @@
+@media screen and (max-width: 1024px)
+{
+
+    .FAQs_page .contantPage_head .page-head-para p
+    {
+        width: 80%;
+    }
+
+    .questions_container .ques_box
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 769px)
+{
+    .ques_box .questions
+    {
+        font: 600 14px var(--paraFont);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .questions_container .ques_box
+    {
+        width: 100%;
+    }
+
+    .FAQs_page .contantPage_head .page-head-para p
+    {
+        width: 100%;
+    }
+}

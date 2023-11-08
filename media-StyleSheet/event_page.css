@@ -1,0 +1,129 @@
+@media screen and (max-width: 1024px)
+{
+    .event_page
+    {
+        padding: 0px 20px;
+    }
+
+    .eventCard_contain .eventCard
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 769px)
+{
+    .eventTimer .timerBox .timerSpan
+    {
+        font: 600 8px var(--paraFont);
+    }
+
+    .eventTimer .timerBox span, .timerBox span .timerValue
+    {
+        font: 600 42px "clash display";
+        color: transparent;
+    }
+
+    .timerBox span .timerValue
+    {
+        width: 80px;
+    }
+
+    .eventCard_contain .eventCard
+    {
+        width: 100%;
+    }
+
+    .eventCard_contain .eventCard::before, .eventCard_contain .eventCard::after
+    {
+        font: 600 92px "clash display";
+    }
+
+    .eventCard::before
+    {
+        top: -70px;
+        background: -webkit-linear-gradient(-90deg, #f3f5dd 5%, #fafafa 95%);
+    }
+
+    .eventCard::after
+    {
+        bottom: -70px;
+    }
+
+    .eventCard .eventHead .eventTitle
+    {
+        font: 600 24px "clash display";
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .eventTimer .timerBox .timerSpan
+    {
+        font: 600 8px var(--paraFont);
+    }
+
+    .eventTimer .timerBox span, .timerBox span .timerValue
+    {
+        font: 500 32px "clash display";
+        color: transparent;
+    }
+
+    .timerBox span .timerValue
+    {
+        width: 60px;
+    }
+
+
+    .eventCard_contain .eventCard::before, .eventCard_contain .eventCard::after
+    {
+        font: 600 62px "clash display";
+    }
+
+    .eventCard::before
+    {
+        top: -50px;
+        background: -webkit-linear-gradient(-90deg, #f3f5dd 5%, #fafafa 95%);
+    }
+
+    .eventCard::after
+    {
+        bottom: -50px;
+    }
+
+    .eventCard .eventHead .eventTitle
+    {
+        font: 600 20px "clash display";
+    }
+
+    .eventCard .eventHead .eventSubTitle
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .eventCard .eventDis
+    {
+        font: 400 10px var(--paraFont);
+    }
+
+    .eventVenue .venueContent
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .venueContent::before
+    {
+        height: 0.5px;
+    }
+
+    .venueContent span
+    {
+        font-size: 10px;
+    }
+
+    .eventBtn button
+    {
+        font: 600 10px var(--paraFont);
+        margin: 0 6px;
+    }
+}

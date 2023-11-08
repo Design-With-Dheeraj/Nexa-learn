@@ -1,0 +1,103 @@
+@media screen and (max-width: 1024px)
+{
+    .reminder_page
+    {
+        width: 740px;
+    }
+
+    .reminderContent .reminderHead
+    {
+        font: 700 30px "biennale-bld";
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .reminder_page
+    {
+        width: 90%;
+        height: 400px;
+    }
+
+    .reminder_page::after
+    {
+        width: 60%;
+        height: 180px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-radius: 0 18px 700px 700px;
+    }
+
+    .reminderContent
+    {
+        width: 100%;
+
+        padding: 0 30px;
+        padding-top: 190px;
+        height: 400px;
+
+        text-align: center;
+    }
+
+    .reminderImg .imgBox img
+    {
+        width: 320px;
+
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .reminderContent .reminderHead
+    {
+        font: 700 26px "biennale-bld";
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .reminder_page
+    {
+        height: 300px;
+    }
+
+    .reminder_page::after
+    {
+        width: 60%;
+        height: 120px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-radius: 0 18px 700px 700px;
+    }
+
+    .reminderContent
+    {
+        padding: 0 10px;
+        padding-top: 140px;
+        height: 300px;
+    }
+
+    .reminderContent .reminderBtn
+    {
+        margin-top: 20px;
+    }
+
+    .reminderImg .imgBox img
+    {
+        width: 240px;
+        top: -80px;
+    }
+
+    .reminderContent .reminderHead
+    {
+        font: 700 20px "biennale-bld";
+        line-height: 24px;
+    }
+}

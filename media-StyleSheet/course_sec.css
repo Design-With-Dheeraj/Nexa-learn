@@ -1,0 +1,52 @@
+@media screen and (max-width: 1440px)
+{
+    .coursesCard_container .coursesCard
+    {
+        margin: 20px 16px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .courses_page
+    {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .coursesCard_container .coursesCard
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+
+    .coursesCard .courseSubHead
+    {
+        width: 160px;
+        font-size: 13px;
+    }
+
+    .courseHead
+    {
+        margin-top: 10px;
+        font: 600 24px "clash display";
+    }
+
+    .courses_imgIcon
+    {
+        width: 80px;
+        height: 50px;
+        border-radius: 0 20px 0 20px;
+    }
+
+    .courses_imgIcon img
+    {
+        width: 40px;
+        height: auto;
+    }
+}
