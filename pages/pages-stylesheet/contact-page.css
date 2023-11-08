@@ -1,0 +1,12 @@
+.banner-head-content::before
+{
+  content: "contact";
+}
+
+@media screen and (max-width: 769px)
+{
+    .wrapper-main .cnt-p-b-100
+    {
+        padding-bottom: 0px;
+    }
+}

@@ -1,0 +1,30 @@
+.banner-head-content span
+{
+    text-transform: uppercase;
+}
+
+.banner-head-content::before
+{
+  content: "faqs";
+  text-transform: uppercase;
+  top: 36%;
+}
+
+@media screen and (max-width: 769px)
+{
+    .wrapper-main .cnt-p-b-100
+    {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+
+    .banner-head-content::before
+    {
+        content: "faqs";
+        top: 36%;
+        font-size: 160px;
+    }
+}
