@@ -1,0 +1,324 @@
+.img-cntr-abs
+{
+  position: relative;
+}
+
+.img-cntr-abs .gallery-img-counter
+{
+  font: 800 26px "clash display";
+  position: absolute;
+  right: 20px;
+  top: -40px;
+  z-index: 1;
+  color: #000;
+}
+
+
+
+
+
+.gallery-page-banner .gallery-banner-head
+{
+  width: 100%;
+  padding: 40px 0;
+  text-transform: capitalize;
+}
+
+.gallery-banner-head .gallery-banner-content
+{
+  font: 500 168px "biennale-bld";
+  text-align: center;
+
+  color: #000;
+  position: relative;
+}
+
+.gallery-banner-content::before
+{
+  content: "portfolio";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+
+  font: 500 240px "biennale-bld";
+  opacity: 0.03;
+}
+
+
+
+
+
+
+.gallery-body-head
+{
+    font: 600 28px "biennale-bld";
+    text-transform: capitalize;
+    line-height: 30px;
+    padding-left: 60px;
+
+    position: relative;
+}
+
+.gallery-body-head::after
+{
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color-green);
+}
+
+.gallery-vid-contain
+{
+    width: 90%;
+    height: 500px;
+
+    margin: 50px auto 30px;
+
+    border-radius: 16px;
+    background: url(/gallery-page-img/gallery-vid-img.jpg) top rgba(35, 35, 35, 0.7);
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.gallery-vid-contain .vid-play-btn
+{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    background-color: var(--bg-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    box-shadow: 0 0 0 rgba(255,255,255, 0.8);
+  	animation: pulse 2s infinite;
+}
+
+@keyframes pulse
+{
+  0% 
+  {
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.8);
+  }
+
+  70% 
+  {
+    box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+
+  100% 
+  {
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+
+.vid-play-btn .fa-play
+{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+.gallery-img-contain
+{
+  width: 90%;
+  margin: 70px auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-img-box-contain
+{
+  width: 49%;
+  height: 250px;
+}
+
+.gallery-img-contain .gallery-img-box
+{
+  width: 100%;
+  height: 100%;
+
+  border-radius: 16px;
+  overflow: hidden;
+  object-fit: cover;
+
+  position: relative;
+}
+
+.gallery-img-box img
+{
+  width: 100%;
+}
+
+
+
+
+
+.img-slider-contain
+{
+  width: 90%;
+  height: 400px;
+  margin: 70px auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 24px;
+}
+
+.carousel-contain
+{
+  width: 100%;
+  height: 400px;
+}
+
+.slider-container 
+{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.slider 
+{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+
+.gallery-slider-btn
+{
+  position: absolute;
+  left: 20px;
+  top: -50px;
+}
+
+.gallery-slider-btn button
+{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.gallery-slider-btn button img
+{
+  width: 40px;
+  height: auto;
+}
+
+
+
+.more-img-contain
+{
+  flex: 1;
+  border-radius: 16px;
+}
+
+.more-img-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.see-more-content
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.see-more-text
+{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.see-more-text
+{
+  font: 98px "biennale-bld";
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.see-more-content .sideA img
+{
+  width: 80px;
+  height: auto;
+}
+
+
+.see-more-btn
+{
+  text-align: right;
+  position: relative;
+}
+
+.see-more-btn .parallax-element
+{
+  left: 100px;
+  top: 40%;
+}
+
+.see-more-btn .arrow-btn
+{
+  width: 140px;
+  height: auto;
+  transform: rotate(180deg);
+  animation: arrow-move 1.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes arrow-move {
+  0%
+  {
+    transform: translateX(0) rotate(180deg);
+  }
+
+  50%{
+    transform: translateX(-20px) rotate(180deg);
+  }
+}

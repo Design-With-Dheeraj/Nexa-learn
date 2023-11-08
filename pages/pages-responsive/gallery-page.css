@@ -1,0 +1,203 @@
+@media screen and (max-width: 1024px)
+{
+    .gallery-banner-head .gallery-banner-content
+    {
+        font: 500 148px "biennale-bld";
+    }
+
+    .gallery-banner-content::before
+    {
+        font: 500 200px "biennale-bld";
+    }
+
+
+
+    /* ------- Coaching Video Contain ------- */
+    .gallery-vid-contain
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+
+
+
+    /* ------ Coaching Images 2nd Row ----- */
+    .gallery-img-contain
+    {
+        width: 100%;
+    }
+
+    .gallery-img-box-contain
+    {
+        height: 200px;
+    }
+
+
+
+
+
+    /* ------ Images Slider Contain ----- */
+    .img-slider-contain
+    {
+        width: 100%;
+        height: 250px;
+    }
+
+    .carousel-contain
+    {
+        height: 250px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 769px)
+{
+    .gallery-banner-head .gallery-banner-content
+    {
+        font: 500 100px "biennale-bld";
+    }
+
+    .gallery-banner-content::before
+    {
+        font: 500 160px "biennale-bld";
+    }
+
+
+
+
+    /*  -------- Coaching Video contain ------- */
+    .gallery-body-head
+    {
+        font: 22px "biennale-bld";
+        line-height: 28px;
+        padding-left: 50px;
+    }
+
+    .gallery-body-head::after
+    {
+        top: 12px;
+        left: 0;
+
+        width: 40px;
+    }
+
+    .gallery-vid-contain .vid-play-btn
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .vid-play-btn .fa-play
+    {
+        font-size: 18px;
+    }
+
+
+
+
+    /* ------ Coaching Images 2nd Row ----- */
+    .gallery-img-contain
+    {
+        width: 100%;
+        flex-direction: column;
+        gap: 60px 0;
+    }
+
+    .gallery-img-box-contain
+    {
+        width: 100%;
+        height: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px)
+{
+    .img-cntr-abs .gallery-img-counter
+    {
+        font: 800 20px "clash display";
+    }
+
+
+
+
+    .gallery-banner-head .gallery-banner-content
+    {
+        font: 500 68px "biennale-bld";
+    }
+
+    .gallery-banner-content::before
+    {
+        font: 500 100px "biennale-bld";
+    }
+
+
+
+    /* ------- Coaching Video Contain ------- */
+    .gallery-body-head
+    {
+        font: 20px "biennale-bld";
+        line-height: 24px;
+        padding-left: 40px;
+    }
+
+    .gallery-body-head::after
+    {
+        top: 12px;
+        left: 0;
+
+        width: 30px;
+    }
+
+    .gallery-vid-contain
+    {
+        height: 220px;
+    }
+
+    .vid-play-btn .fa-play
+    {
+        font-size: 16px;
+    }
+
+
+
+
+
+    /* ------ Coaching Images 2nd Row ----- */
+    .gallery-img-box-contain
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+
+
+    /* ------ Images Slider Contain ----- */
+    .img-slider-contain
+    {
+        height: 180px;
+    }
+
+    .carousel-contain
+    {
+        height: 180px;
+    }
+
+    .gallery-slider-btn button img
+    {
+        width: 30px;
+    }
+}

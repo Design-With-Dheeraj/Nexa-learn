@@ -1,0 +1,368 @@
+@media (max-width: 1440px) and (min-width: 1200px)
+{
+    .page-center
+    {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    .about-banner-contain .contain-img-area img
+    {
+        width: 540px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+
+    .about-banner-contain .contain-img-area img
+    {
+        width: 500px;
+        height: auto;
+    }
+
+
+
+    .story-contain .sec-1-img img
+    {
+        width: 450px;
+        height: auto;
+    }
+
+
+
+    /* -------- Our Mission Contain ----------- */
+
+    .mission-contain-body
+    {
+        font: 400 48px "clash display";
+    }
+
+    .mission-contain-body .mission-img2
+    {
+        width: 200px;
+    }
+
+    .mission-contain-body b
+    {
+        font-weight: 600;
+    }
+
+
+
+
+    /* ---------- Core Value Contain ---------- */
+
+    .val-contain-head .head-text
+    {
+        padding-right: 50px;
+    }
+
+    .val-contain-head .head-text p
+    {
+        font: 600 26px "clash display";
+    }
+
+    .val-contain-head .head-text p span
+    {
+        font-weight: 700;
+    }
+
+    .val-contain-head .head-img img
+    {
+        width: 420px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .about-banner-contain
+    {
+        flex-direction: column-reverse;
+    }
+
+    .about-banner-contain .contain-img-area img
+    {
+        width: 580px;
+        height: auto;
+    }
+
+
+
+    /* -------- Story Contain -------- */
+
+    .about-sec-contain .story-contain
+    {
+        flex-direction: column;
+    }
+
+    .sec-1 .contantPage_head .page-head-para
+    {
+        width: 90%;
+    }
+
+
+
+
+
+
+    /* -------- Our Mission Contain ----------- */
+
+    .mission-contain-body
+    {
+        font: 400 42px "clash display";
+    }
+
+    .mission-contain-body img
+    {
+        width: 40px;
+    }
+
+
+
+    /* ---------- Core Value Contain ---------- */
+    .val-contain-head
+    {
+        flex-direction: column;
+    }
+
+    .val-contain-head .contantPage_head
+    {
+        padding-right: 20px;
+    }
+
+    .val-contain-head .head-img img
+    {
+        width: 420px;
+        height: auto;
+    }
+
+
+
+    /* --------- Our Trainers Code ------------ */
+    .sec-4 .contantPage_head .page-head-para
+    {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .about-banner-contain .contain-img-area img
+    {
+        width: 440px;
+        height: auto;
+    }
+    
+    /*  ---------- Story Contain ---------- */
+    
+    .story-contain .page-img img
+    {
+        width: 400px;
+        height: auto;
+    }
+
+    .story-contain .page-content
+    {
+        padding: 10px;
+    }
+
+    .story-contain .page-content .spanHead
+    {
+        font: 600 12px var(--paraFont);
+    }
+
+    .story-contain .page-content-head
+    {
+        font: 600 26px var(--paraFont);
+    }
+
+    .page-content-head span
+    {
+        font: 700 26px "clash display";
+    }
+
+
+
+
+    /* -------- Our Mission Contain ----------- */
+
+    .mission-contain-body
+    {
+        font: 400 32px "clash display";
+    }
+
+    .mission-contain-body .mission-img2
+    {
+        width: 180px;
+    }
+
+    .mission-contain-body b
+    {
+        font-weight: 600;
+    }
+
+
+    /* ---------- Core Value Contain ---------- */
+
+    .val-contain-head .head-text
+    {
+        padding-right: 0;
+    }
+
+    .val-contain-head .head-text p
+    {
+        font: 600 22px "clash display";
+    }
+
+    .val-contain-head .head-text p span
+    {
+        font-weight: 700;
+    }
+
+    .val-contain-head .head-img
+    {
+        margin: 20px 0;
+    }
+
+    .val-contain-head .head-img img
+    {
+        width: 380px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 480px)
+{
+    .about-banner-contain .contain-img-area img
+    {
+        width: 360px;
+        height: auto;
+    }
+
+    .banner-content-btn-contain
+    {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .banner-content-btn-contain button
+    {
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .contact-btn
+    {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+
+    /* ----------- Story Contain ------------ */
+
+    .story-contain .page-img img
+    {
+        width: 360px;
+        height: auto;
+    }
+
+    .story-contain .page-content .spanHead
+    {
+        font: 600 12px var(--paraFont);
+    }
+
+    .page-content .page-content-head
+    {
+        font: 600 22px var(--paraFont);
+        line-height: 24px;
+    }
+
+    .page-content-head span
+    {
+        font: 700 22px "clash display";
+    }
+
+    .benefits-points-contain
+    {
+        padding: 0 0 0 20px;
+    }
+
+    .benefits-points-contain::before
+    {
+        left: 18px;
+    }
+
+    .benefit-point .benefit-head span
+    {
+        font: 600 14px var(--paraFont);
+    }
+
+
+    /* -------- Our Mission Contain ----------- */
+
+    .mission-contain-body
+    {
+        font: 400 30px "clash display";
+    }
+
+    .mission-contain-body .mission-img2
+    {
+        width: 120px;
+    }
+
+    .mission-contain-body b
+    {
+        font-weight: 600;
+    }
+
+    .mission-contain-vid video
+    {
+        width: 160px;
+        height: auto;
+    }
+
+
+    /* ---------- Core Value Contain ---------- */
+
+    .val-contain-head
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .val-contain-head .contantPage_head
+    {
+        padding-right: 0px;
+    }
+
+    .val-contain-head .head-img img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .val-point
+    {
+        width: 100%;
+    }
+
+
+
+
+    /* --------- Our Trainers Code ------------ */
+    .sec-4 .contantPage_head .page-head-para
+    {
+        width: 100%;
+    }
+
+}
