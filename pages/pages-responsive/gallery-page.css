@@ -1,11 +1,11 @@
 @media screen and (max-width: 1024px)
 {
-    .gallery-banner-head .gallery-banner-content
+    .banner-head-text .banner-head-content
     {
         font: 500 148px "biennale-bld";
     }
 
-    .gallery-banner-content::before
+    .banner-head-content::before
     {
         font: 500 200px "biennale-bld";
     }
@@ -59,12 +59,12 @@
 
 @media screen and (max-width: 769px)
 {
-    .gallery-banner-head .gallery-banner-content
+    .banner-head-text .banner-head-content
     {
         font: 500 100px "biennale-bld";
     }
 
-    .gallery-banner-content::before
+    .banner-head-content::before
     {
         font: 500 160px "biennale-bld";
     }
@@ -134,12 +134,12 @@
 
 
 
-    .gallery-banner-head .gallery-banner-content
+    .banner-head-text .banner-head-content
     {
         font: 500 68px "biennale-bld";
     }
 
-    .gallery-banner-content::before
+    .banner-head-content::before
     {
         font: 500 100px "biennale-bld";
     }
