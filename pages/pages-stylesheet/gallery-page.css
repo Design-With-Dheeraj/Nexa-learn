@@ -17,14 +17,14 @@
 
 
 
-.gallery-page-banner .gallery-banner-head
+.pages-banner-head-contain .banner-head-text
 {
   width: 100%;
   padding: 40px 0;
   text-transform: capitalize;
 }
 
-.gallery-banner-head .gallery-banner-content
+.banner-head-text .banner-head-content
 {
   font: 500 168px "biennale-bld";
   text-align: center;
@@ -33,7 +33,7 @@
   position: relative;
 }
 
-.gallery-banner-content::before
+.banner-head-content::before
 {
   content: "portfolio";
 
