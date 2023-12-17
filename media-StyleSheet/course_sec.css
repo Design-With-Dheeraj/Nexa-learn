@@ -8,10 +8,19 @@
 
 @media screen and (max-width: 1024px)
 {
-    .courses_page
+
+    .course-categ-bx
     {
-        padding: 0 20px;
+        width: 300px;
+        height: auto;
     }
+
+    .course-categ-bx .course-categ-icon img
+    {
+        width: 120px;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 768px)
@@ -20,9 +29,27 @@
     {
         width: 100%;
     }
+
+    .course-categ-bx
+    {
+        width: 460px;
+        height: auto;
+    }
+
+    .course-categ-bx .course-categ-icon
+    {
+        width: 100%;
+        height: 160px;
+    }
+
+    .course-categ-bx .course-categ-icon img
+    {
+        width: 160px;
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 420px)
+@media screen and (max-width: 480px)
 {
 
     .coursesCard .courseSubHead
@@ -48,5 +75,186 @@
     {
         width: 40px;
         height: auto;
+    }
+
+
+
+    .course-categ-bx
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .course-categ-bx .course-categ-icon
+    {
+        width: 100%;
+        height: 120px;
+    }
+
+    .course-categ-bx .course-categ-icon img
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .course-categ-bx .categ-name
+    {
+        border-radius: 6px;
+        margin-top: 6px;
+    }
+
+    .course-categ-bx .course-categ-name
+    {
+        font: 600 16px var(--paraFont);
+        line-height: 16px;
+    }
+
+    .course-categ-vm-btn a
+    {
+        font: 700 10px var(--paraFont);
+    }
+}
+
+
+
+
+/* -------- Popular Course ------- */
+
+@media screen and (max-width: 1200px)
+{
+    .popular-crs-bx .crs-img
+    {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .popular-crs-contain
+    {
+        width: 100%;
+        
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .crs-bx1
+    {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .crs-bx2
+    {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .crs-bx3
+    {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .crs-bx4
+    {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    .crs-bx5
+    {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .crs-bx6
+    {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .popular-crs-bx .crs-img
+    {
+        width: 100%;
+        height: 240px;
+    }
+
+    .popular-crs-contain
+    {
+        width: 440px;
+        
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .crs-bx1
+    {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .crs-bx2
+    {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .crs-bx3
+    {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .crs-bx4
+    {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    .crs-bx5
+    {
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+    }
+    .crs-bx6
+    {
+        grid-row: 6 / 7;
+        grid-column: 1 / 2;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .popular-crs-bx .crs-img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .popular-crs-contain
+    {
+        width: 100%;
+    }
+    
+    .popular-crs-bx .crs-info
+    {
+        margin-top: 10px;
+    }
+
+    .popular-crs-bx .crs-info .crs-title
+    {
+        font: 600 18px "biennale";
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .popular-crs-bx .crs-box-btn
+    {
+        gap: 10px;
+    }
+
+    .popular-crs-bx .crs-box-btn a
+    {
+        font: 600 10px "biennale";
+        
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
     }
 }
