@@ -1784,8 +1784,6 @@ div
 	padding: 20px;
 	
 	border-radius: 22px;
-	outline: 2px solid #000;
-	outline-offset: 5px;
 
 	background: url(./img/eventImg1.jpg) rgba(35, 35, 35, 0.85);
 	background-blend-mode: multiply;
