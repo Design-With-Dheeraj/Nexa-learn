@@ -1,9 +1,9 @@
 @media screen and (max-width: 1024px)
 {
-    .event_page
+    /* .event_page
     {
         padding: 0px 20px;
-    }
+    } */
 
     .eventCard_contain .eventCard
     {
@@ -56,7 +56,7 @@
     }
 }
 
-@media screen and (max-width: 420px)
+@media screen and (max-width: 480px)
 {
     .eventTimer .timerBox .timerSpan
     {
@@ -72,6 +72,12 @@
     .timerBox span .timerValue
     {
         width: 60px;
+    }
+
+    .eventCard_contain .eventCard
+    {
+        width: 100%;
+        border-radius: 12px;
     }
 
 
