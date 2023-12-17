@@ -264,6 +264,16 @@
 
 @media screen and (max-width: 480px)
 {
+    .m-t-50
+    {
+        margin-top: 20px;
+    }
+
+    .p-40
+    {
+        padding: 20px 0;
+    }
+
     .m-t--100
     {
         margin-top: -150px;
