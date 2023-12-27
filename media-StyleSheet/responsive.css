@@ -324,4 +324,9 @@
         transform: rotate(180deg);
         left: -20px;
     }
+
+    .content_button
+    {
+        font: 600 10px var(--paraFont);
+    }
 }
