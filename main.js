@@ -7,47 +7,6 @@ window.addEventListener("scroll", function () {
 
 
 
-// Event page Timer Countdown ------------------->
-// Function to calculate the time remaining until the end of the current month
-function getTimeRemaining() {
-  const now = new Date();
-  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-  const totalSeconds = Math.floor((endOfMonth - now) / 1000);
-
-  const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
-
-  return { days, hours, minutes, seconds };
-}
-
-// Function to update the countdown timer
-function updateCountdown() {
-  const { days, hours, minutes, seconds } = getTimeRemaining();
-
-  // Format each value to always have two digits
-  const formattedDays = String(days).padStart(2, '0');
-  const formattedHours = String(hours).padStart(2, '0');
-  const formattedMinutes = String(minutes).padStart(2, '0');
-  const formattedSeconds = String(seconds).padStart(2, '0');
-
-  document.getElementById('eventTimer_day').innerHTML = formattedDays;
-  document.getElementById('eventTimer_hour').innerHTML = formattedHours;
-  document.getElementById('eventTimer_min').innerHTML = formattedMinutes;
-  document.getElementById('eventTimer_sec').innerHTML = formattedSeconds;
-}
-
-// Update the countdown initially
-updateCountdown();
-
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
-
-
-
-
-
 // Leader Page Swiper -------------------------->
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const slides = document.querySelectorAll('.swiper-slide');
