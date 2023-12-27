@@ -1730,185 +1730,127 @@ div
 
 /* ----- Event Page Code Start -------- */
 
-.eventCard_containar
+
+.up-event-contain
 {
-	margin: 30px 0;
-	z-index: 99;
-}
-
-.eventCard_containar .eventTimer
-{
-	text-align: center;
-
-	display: flex;
-	justify-content: center;
-}
-
-.eventTimer .timerBox .timerSpan
-{
-	font: 600 10px var(--paraFont);
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
-}
-
-.eventTimer .timerBox span, .timerBox span .timerValue
-{
-	font: 600 52px "clash display";
-	color: transparent;
-
-	background: -webkit-linear-gradient(-90deg, #8D5AD5 5%, #fafafa 95%);
-	-webkit-background-clip: text;
-	-webkit-text-stroke: 2px transparent;
-}
-
-.timerBox span
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.timerBox span .timerValue
-{
-	width: 120px;
-	letter-spacing: 2px;
-}
-
-
-.eventCard_contain .eventCard
-{
-	width: 760px;
-	
-	margin: 0 auto;
-	margin-top: 30px;
-	padding: 20px;
-	
-	border-radius: 22px;
-
-	background: url(./img/eventImg1.jpg) rgba(35, 35, 35, 0.85);
-	background-blend-mode: multiply;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	color: var(--bg-color);
-	position: relative;
-}
-
-.eventCard_contain .eventCard::before, .eventCard_contain .eventCard::after
-{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
-
-	font: 700 152px "clash display";
-	color: transparent;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-
-	z-index: -1;
-}
-.eventCard::before
-{
-	content: "upcoming";
-	top: -120px;
-
-	background: -webkit-linear-gradient(-90deg, #f0f2db 5%, #fafafa 95%);
-}
-
-.eventCard::after
-{
-	content: "program";
-	bottom: -120px;
-	background: -webkit-linear-gradient(90deg, #f0f2db 5%, #fafafa 95%);
-}
-
-.eventCard .eventHead .eventTitle
-{
-	font: 600 26px "clash display";
-	letter-spacing: 1px;
-}
-
-.eventCard .eventHead .eventSubTitle
-{
-	font: 500 14px var(--paraFont);
-	text-transform: capitalize;
-}
-
-.eventCard .eventDis
-{
-	font: 400 12px var(--paraFont);
-	margin: 20px 0;
-	text-transform: capitalize;
-}
-
-.eventVenue .venueContent
-{
-	font: 500 14px var(--paraFont);
-	text-transform: capitalize;
-
-	padding-left: 30px;
-	position: relative;
-}
-
-.venueContent::before
-{
-	content: "";
-
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translate(0, -50%);
-
-	width: 20px;
-	height: 1px;
-
-	background-color: var(--bg-color);
-}
-
-.venueContent i
-{
-	width: 20px;
-}
-
-.venueContent span
-{
-	font-size: 12px;
-	margin-left: 4px;
-}
-
-.eventCard .eventBtn
-{
-	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	margin-top: 30px;
+
+	position: relative;
 }
 
-.eventBtn button
+.up-event-img img
 {
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-
-	font: 600 12px var(--paraFont);
-
-	background-color: var(--bg-color);
-	color: #000;
-	border-radius: 8px;
-	border: none;
-
-	outline: 1.5px solid var(--bg-color);
-	outline-offset: 3px;
-
-	cursor: pointer;
-	margin: 0 10px;
-	transition: 0.3s;
+	width:500px;
+	height: auto;
 }
+
+.up-event-content .event-head
+{
+	font: 800 24px "biennale";
+}
+
+.up-event-content .event-info
+{
+	font: 500 14px var(--paraFont);
+	color: #959595;
+
+	margin-top: 10px;
+}
+
+
+
+.up-batch-info-contain
+{
+	width: 80%;
+	display: grid;
+	grid-template-columns: 2/auto;
+	grid-template-rows: 2/1fr;
+
+	margin: 10px auto;
+}
+
+.up-batch-info
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 10px 0
+}
+
+.batch-date
+{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+
+	border-right: 0.1px solid #b4b4b4;
+	border-bottom: 0.1px solid #b4b4b4;
+}
+.batch-mode
+{
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	border-left: 0.1px solid #b4b4b4;
+	border-bottom: 0.1px solid #b4b4b4;
+}
+.batch-fees
+{
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	border-right: 0.1px solid #b4b4b4;
+	border-top: 0.1px solid #b4b4b4;
+}
+.batch-enrolled
+{
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+
+	border-left: 0.1px solid #b4b4b4;
+	border-top: 0.1px solid #b4b4b4;
+}
+
+.up-batch-info .batch-mini-head
+{
+	font: 800 10px var(--paraFont);
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.up-batch-info .up-batch-icon img
+{
+	width: 50px;
+	height: auto;
+}
+
+.up-batch-info .batch-main-text
+{
+	font: 600 22px var(--paraFont);
+	color: #0CBC8B;
+	line-height: 20px;
+	text-transform: capitalize;
+}
+
+.up-batch-info .batch-mini-text
+{
+	font: 600 12px var(--paraFont);
+	text-transform: capitalize;
+}
+
+.batch-fees del
+{
+	color: red;
+}
+
+.up-batch-book-btn .content_button
+{
+	/* margin: 0 auto; */
+	width: 240px;
+}
+
 
 
 /* ----- Event Page Code End -------- */
