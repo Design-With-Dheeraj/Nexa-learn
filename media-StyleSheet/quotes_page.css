@@ -1,0 +1,62 @@
+@media screen and (max-width: 1200px)
+{
+    .quotes_page
+    {
+        padding: 0 20px;
+    }
+
+    .quotes_page p
+    {
+        font: 600 48px "biennale";
+        line-height: 52px;
+        color: #a6a6a6;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+
+}
+
+@media screen and (max-width: 769px)
+{
+    .quotes_page p
+    {
+        font: 600 42px "biennale";
+        line-height: 52px;
+    }
+
+    .quotes_page p img
+    {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .quotes_page
+    {
+        padding: 0 0px;
+    }
+
+    .quotes_page p
+    {
+        font: 600 28px "biennale";
+        line-height: 38px;
+        letter-spacing: 1px;
+    }
+
+    .quotes-by-name
+    {
+        font: 600 14px var(--paraFont);
+
+        margin-top: 6px;
+        padding-left: 30px;
+    }
+
+    .quotes_page p img
+    {
+        margin-right: 5px;
+        width: 20px;
+    }
+}
