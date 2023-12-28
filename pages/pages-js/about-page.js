@@ -178,5 +178,5 @@ window.addEventListener("scroll", function () {
       const largeMove_x = (e.clientX / window.innerWidth) * 100;
       const largeMove_y = (e.clientY / window.innerHeight) * 100;
 
-      element7.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+      // element7.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
   });
