@@ -2630,7 +2630,7 @@ footer
 	width: 300px;
 
 	display: flex;
-	align-items: center;
+	align-items: end;
 	flex-direction: column;
 }
 
@@ -2663,6 +2663,10 @@ footer
 	color: var(--bg-color);
 	font: 500 12px var(--paraFont);
 	margin-top: 8px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footerContact_content .footerContact
