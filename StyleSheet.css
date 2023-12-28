@@ -2054,6 +2054,60 @@ div
 
 
 
+/* --------- Qutes page Code Start -------- */
+
+.quotes_page
+{
+	padding: 0 100px;
+}
+
+.quotes_page p
+{
+	font: 600 56px "biennale";
+	line-height: 64px;
+	color: #a6a6a6;
+}
+
+.quotes_page p img
+{
+	width: 50px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.quotes-by-name
+{
+	font: 600 20px var(--paraFont);
+
+	margin-top: 14px;
+	padding-left: 30px;
+	
+	color: #a7a7a7;
+
+	position: relative;
+}
+
+.quotes-by-name::before
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 24px;
+	height: 3px;
+	border-radius: 35px;
+
+	background-color: var(--primary-color-lightRed);
+}
+
+
+
+
+
+
+
 /* ----- Reminder Page Code Start -------- */
 .reminder_page
 {
@@ -2549,8 +2603,8 @@ div
 
 footer
 {
-	padding: 30px 50px 10px;
-	background-color: var(--primary-color-purple);
+	padding: 10px 50px;
+	background-color: #003c7b;
 }
 
 .footerContent_containar
@@ -2628,20 +2682,11 @@ footer
 }
 
 
-
-.footerMiddle_content
-{
-	padding: 20px 0;
-	border-top: 1px solid rgba(210, 210, 210, 0.5);
-	border-bottom: 1px solid rgba(210, 210, 210, 0.5);
-}
-
 .footerQuickLinks_area
 {
 	width: 100%;
 	padding: 10px;
-
-	background-color: var(--bg-color);
+	color: var(--bg-color);
 }
 
 .footerHead
@@ -2654,6 +2699,7 @@ footer
 {
 	margin-top: 6px;
 	padding-left: 30px;
+	color: var(--bg-color);
 }
 
 .linksContainar ul
@@ -2691,8 +2737,7 @@ footer
 	font: 500 13px var(--paraFont);
 	text-decoration: none;
 	text-transform: capitalize;
-
-	color: #000;
+	color: var(--bg-color);
 }
 
 .linksContainar ul li .faqsLink
