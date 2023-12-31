@@ -2,6 +2,12 @@
 
 @media screen and (max-width: 1024px)
 {
+    .navLinks_left .logo img
+    {
+        width: 100px;
+        height: auto;
+    }
+
     .navMain .navLinks
     {
         padding: 0 20px;
@@ -14,8 +20,14 @@
 
     .navLinks ul li a
     {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 500;
+    }
+
+    .signUp_btn_main .content_button
+    {
+        width: 120px;
+        font: 600 10px var(--paraFont);
     }
 
     .navMain .joinBtn
