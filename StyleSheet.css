@@ -452,34 +452,62 @@ div
 /* ------- Header NavBar Code End ---------- */
 
 /* ------- Responsive NavBar Code Start -------- */
-
 .mobile_navBar
 {
 	position: fixed;
 	width: 100%;
 
 	background-color: var(--bg-color);
-	border: 1px solid black;
 
 	top: 0;
 	bottom: 0;
 	left: -100%;
 
-	display: flex;
+	display: none;
 
-	z-index: 9999;
+	z-index: 99;
 	transition: 0.5s, opacity 300ms ease-in-out;
+	padding: 20px;
+
+	overflow-y: scroll;
+}
+
+.mobile_navBar::-webkit-scrollbar-thumb 
+{
+	background: #ffffff; 
+	border-radius: 10px 0 0 10px;
+	transition: 0.2s;
+}
+
+.mobile_navBar::-webkit-scrollbar-thumb:hover 
+{
+	background: #ffffff; 
 }
 
 .navSlide
 {
-	left: 0%;
+	top: 0;
+	left: 0;
+	bottom: 0;
 }
 
-.mobile_navBar .mobNav_RightSide .close
+.mob-nav-head
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mob-nav-head .head-img img
+{
+	width: 100px;
+	height: auto;
+}
+
+.mob-nav-head .close
 {
 	width: 120px;
-	height: 34px;
+	height: 36px;
 	
 	float: right;
 	
@@ -491,122 +519,155 @@ div
 	font: 600 12px var(--paraFont);
 	text-transform: capitalize;
 
-	border-radius: 35px;
+	border-radius: 6px;
 	background-color: var(--primary-color-purple);
 	color: var(--bg-color);
-
-	outline: 2px solid var(--primary-color-purple);
-	outline-offset: 3px;
 
 	cursor: pointer;
 
 	box-shadow: 4px 4px 10px rgba(163, 163, 163, 0.2);
 }
 
-.mobile_navBar .close i
+.mob-nav-head .close i
 {
 	font-size: 16px;
 	margin-left: 8px;
 }
 
-.mobNav_leftSide, .mobNav_RightSide
+.mob-nav-links
 {
-	width: 100%;
-	/* height: 100%; */
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 20px 0;
 }
 
-.mobNav_leftSide
+
+
+.mob-nav-links .link-bx
 {
-	border: 1px solid red;
-}
-
-.mobNav_leftSide .leftSide_head
-{
-	font: 600 42px "clash display";
-	text-transform: capitalize;
-	letter-spacing: 1px;
-
-	color: transparent;
-	background: -webkit-linear-gradient(-86deg, #8D5AD5 5%, #FEADAD 95%);
-  -webkit-background-clip: text;
-
-	transition: 0.2s;
-}
-
-.mobNav_leftSide ul
-{
-	height: 100%;
-	/* border: 1px solid green; */
+	margin: 5px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f2f2f2;
 
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.drop-link-bx
+{
 	flex-direction: column;
-
-	margin-top: 10px;
-
-	position: relative;
 }
 
-.mobNav_leftSide ul::before
+.dropBtn-contain
 {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-	width: .5px;
-	height: 100%;
-
-	background-color: var(--primary-color-purple);
+	cursor: pointer;
 }
 
-.mobNav_leftSide ul li
-{
-	list-style: none;
-
-	padding-left: 40px;
-	/* margin: 24px 0; */
-
-	position: relative;
-}
-
-.mobNav_leftSide ul li::before
-{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translate(0, -50%);
-
-	width: 30px;
-	height: .5px;
-	background-color: var(--primary-color-purple);
-
-}
-
-.mobNav_leftSide ul li a
+.mob-nav-links .link-bx a
 {
 	text-decoration: none;
+	
+	font: 600 36px "biennale";
+	line-height: 30px;
+	text-transform: capitalize;
+
+	color: #000;
+}
+
+.link-bx .dropdown-btn
+{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 2px solid var(--primary-color-purple);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dropdown-btn i
+{
+	font-size: 16px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.iconRotate
+{
+	transform: rotate(45deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+.link-bx .dropdown-bx
+{
+	width: 100%;
+	padding-left: 20px;
+	padding-top: 10px;
+	display: none;
+}
+
+.drop-link-bx.crsDropActive .dropdown-bx
+{
+	display: block;
+}
+
+.dropdown-bx .crs-drop-bx
+{
+	padding-bottom: 10px;
+}
+
+.dropdown-bx .crs-drop-bx a
+{
+	font: 600 18px "biennale";
+	text-transform: capitalize;
+	color: #a8a8a8;
+	letter-spacing: 1px;
+
+	transition: 0.5s;
+}
+
+.dropdown-bx .crs-drop-bx a:hover
+{
+	color: var(--primary-color-green);
+}
+
+.mobNav-btn
+{
+	width: 100%;
+	margin-top: 20px;
+	/* border: 1px solid red; */
+}
+
+.mobNav-btn a
+{
+	width: 200px;
+	height: 46px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
 	font: 600 14px var(--paraFont);
 	text-transform: capitalize;
-	color: #000;
+	text-decoration: none;
 
-	transition: 0.2s;
+	border-radius: 6px;
+	background-color: var(--primary-color-purple);
+	color: var(--bg-color);
+
+	cursor: pointer;
+	/* margin: 0 auto; */
+	box-shadow: 4px 4px 10px rgba(163, 163, 163, 0.2);
 }
-
-.mobNav_leftSide ul li a:hover
-{
-	color: transparent;
-	background: -webkit-linear-gradient(-86deg, #8D5AD5 5%, #FEADAD 95%);
-  -webkit-background-clip: text;
-}
-
-.mobNav_RightSide .rightSide_quickLinks
-{
-	margin-top: 100px;
-}
-
 /* ------- Responsive NavBar Code End -------- */
 
 
