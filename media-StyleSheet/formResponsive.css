@@ -33,7 +33,7 @@
     .webForms
     {
         flex-direction: column;
-        height: 620px;
+        height: 80%;
 
         overflow: visible;
     }
@@ -48,7 +48,7 @@
 
     .imgSection img
     {
-        width: 340px;
+        width: 240px;
         height: auto;
     }
 
@@ -110,7 +110,7 @@
     }
 }
 
-@media screen and (max-width: 420px)
+@media screen and (max-width: 480px)
 {
     .webForms .formHead span
     {
@@ -119,7 +119,7 @@
 
     .imgSection img
     {
-        width: 280px;
+        width: 220px;
         height: auto;
     }
 
