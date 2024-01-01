@@ -222,7 +222,7 @@
 }
 
 .slider img {
-  width: 100%;
+  width: 130%;
   height: auto;
   transition: transform 0.3s ease-in-out;
   transform: scale(1.3);
