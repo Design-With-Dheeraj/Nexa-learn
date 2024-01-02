@@ -95,4 +95,54 @@ window.addEventListener("scroll", function () {
       eyeClose.style.display = "block";
     }
   }
+
+
+
   
+// Leader Page Swiper -------------------------->
+const swiperWrapper = document.querySelector('.swiper-wrapper');
+const slides = document.querySelectorAll('.swiper-slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentIndex = 0;
+
+function updateSlidePosition() {
+  swiperWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  // Enable or disable navigation buttons based on slide index
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === slides.length - 1;
+
+  // Add or remove disabled class based on button state
+  if (prevBtn.disabled) {
+    prevBtn.classList.add('disabled-btn');
+    prevBtn.style.cursor = "auto";
+  } else {
+    prevBtn.classList.remove('disabled-btn');
+    prevBtn.style.cursor = "pointer";
+  }
+
+  if (nextBtn.disabled) {
+    nextBtn.classList.add('disabled-btn');
+    nextBtn.style.cursor = "auto";
+  } else {
+    nextBtn.classList.remove('disabled-btn');
+    nextBtn.style.cursor = "pointer";
+  }
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlidePosition();
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlidePosition();
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+updateSlidePosition();
+
