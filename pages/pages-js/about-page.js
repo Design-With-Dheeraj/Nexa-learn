@@ -138,3 +138,12 @@ function togglePassword() {
 
       // element7.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
   });
+
+
+
+// Book Seat Page Btn
+let contactbtn = document.getElementById('abo-bann-contactBtn');
+
+contactbtn.addEventListener('click', function() {
+  window.location.href = 'contact-page.html';
+})
