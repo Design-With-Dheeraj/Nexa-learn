@@ -88,12 +88,12 @@
     .course-categ-bx .course-categ-icon
     {
         width: 100%;
-        height: 120px;
+        height: auto;
     }
 
     .course-categ-bx .course-categ-icon img
     {
-        width: 100px;
+        width: 180px;
         height: auto;
     }
 
@@ -221,6 +221,11 @@
 
 @media screen and (max-width: 480px)
 {
+    .popular-crs-bx
+    {
+        box-shadow: 10px 10px 0px #CAC9D6;
+    }
+
     .popular-crs-bx .crs-img
     {
         width: 100%;
