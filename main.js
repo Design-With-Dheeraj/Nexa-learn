@@ -245,3 +245,26 @@ document.querySelector('.drop-link-bx').addEventListener('click', () => {
 })
 
 
+
+// Main Page Banner Btn
+let joinBtn = document.getElementById('joinBtn');
+
+joinBtn.addEventListener('click', function() {
+  window.location.href = 'contact-page.html';
+})
+
+
+// Why Us Page Btn
+let whyUsBtn = document.getElementById('whyUs-btn');
+
+whyUsBtn.addEventListener('click', function() {
+  window.location.href = 'about-page.html';
+})
+
+
+// Book Seat Page Btn
+let bookSeatBtn = document.getElementById('seatBook-btn');
+
+bookSeatBtn.addEventListener('click', function() {
+  window.location.href = 'contact-page.html';
+})
