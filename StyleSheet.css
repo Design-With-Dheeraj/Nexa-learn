@@ -1232,130 +1232,7 @@ div
 
 
 
-/* ----- Courses Page Code Start -------- */
-
-.courses_page .coursesCard_container
-{
-	margin-top: 40px;
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.coursesCard_container .coursesCard
-{
-	width: 380px;
-	height: 240px;
-
-	position: relative;
-    
-    border-radius: 24px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	
-	outline-offset: 4px;
-    
-    padding: 15px;
-	margin: 20px 16px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	text-transform: capitalize;
-}
-
-.coursesCard_container .blueColor_card
-{
-	background: rgba(141, 90, 213, 0.4);
-	outline: 2px solid var(--primary-color-purple);
-}
-
-.coursesCard_container .redColor_card
-{
-	background: rgba(254, 173, 173, 0.4);
-	outline: 2px solid var(--primary-color-lightRed);
-}
-
-.coursesCard_container .greenColor_card
-{
-	background: rgba(12, 188, 139, 0.4);
-	outline: 2px solid var(--primary-color-green);
-}
-
-.courses_imgIcon
-{
-	position: absolute;
-	right: 0;
-	top: 0;
-	
-	width: 100px;
-	height: 60px;
-	
-	background-color: var(--bg-color);
-	border-radius: 0 24px 0 24px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.courses_imgIcon img
-{
-	width: 50px;
-	height: auto;
-}
-
-.coursesCard .courseSubHead
-{
-	width: 260px;
-	font: 600 16px "biennale";
-	letter-spacing: .5px;
-}
-
-.courseHead
-{
-	margin-top: 10px;
-	font: 700 28px "clash display";
-	text-align: center;
-}
-
-.courseCard_btn button
-{
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-
-	font: 600 12px var(--paraFont);
-
-	background-color: var(--bg-color);
-	color: #000;
-	border-radius: 8px;
-	border: none;
-
-	outline: 1.5px solid var(--bg-color);
-	outline-offset: 3px;
-
-	cursor: pointer;
-}
-
-.seeCourse_btn_card
-{
-	background-color: #e7e7e7;
-	outline: 2px solid #e7e7e7;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-/* ------ Course Categories Container ----- */
+* ------ Course Categories Container ----- */
 
 .course-categ-contain
 {
@@ -1377,43 +1254,19 @@ div
 .course-categ-bx .course-categ-icon
 {
 	width: 100%;
-	height: 140px;
+	height: auto;
 
 	border-radius: 8px;
+	/* border: 2px solid #000; */
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.categ-icon1
-{
-	background-color: #dbf2f6;
-}
-
-.categ-icon2
-{
-	background-color: #ffe1bd;
-}
-
-.categ-icon3
-{
-	background-color: #f8ffb0;
-}
-
-.categ-icon4
-{
-	background-color: #ffdbfa;
-}
-
-.categ-icon5
-{
-	background-color: #c9ffbc;
-}
-
 .course-categ-bx .course-categ-icon img
 {
-	width: 140px;
+	width: 240px;
 	height: auto;
 }
 
@@ -1477,7 +1330,17 @@ div
 
 .popular-crs-bx
 {
+	border-radius: 14px;
+	padding: 12px;
 	height: auto;
+	border: 1px solid #000;
+
+	transition: 0.3s;
+}
+
+.popular-crs-bx:hover
+{
+	box-shadow: 10px 10px 0px #CAC9D6;
 }
 
 .crs-bx1
@@ -1535,8 +1398,40 @@ div
 	margin-top: 20px;
 }
 
+.crs-categ-rating
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.crs-info .crs-categ
+{
+	padding: 4px 18px;
+	font: 600 12px var(--paraFont);
+	text-transform: capitalize;
+	letter-spacing: 1px;
+
+	display: inline;
+	background-color: #e4e4e4;
+	border-radius: 35px;
+}
+
+.crs-categ-rating .crs-rating
+{
+	font: 600 12px var(--paraFont);
+	color: #8f8f8f;
+}
+
+.crs-rating i
+{
+	color: #f8bc24;
+	margin-right: 6px;
+}
+
 .popular-crs-bx .crs-info .crs-title
 {
+	margin-top: 10px;
 	font: 600 20px "biennale";
 	text-transform: capitalize;
 }
@@ -1547,7 +1442,7 @@ div
 	color: #a9a9a9;
 
 	padding: 6px 0;
-	padding-left: 20px;
+	padding-left: 24px;
 
 	position: relative;
 }
@@ -1568,14 +1463,25 @@ div
 
 .popular-crs-bx .crs-info .crs-author
 {
-	font: 500 12px var(--paraFont);
+	font: 600 12px var(--paraFont);
 	text-transform: capitalize;
-	padding-left: 20px;
+	/* padding-left: 20px; */
+
+	display: flex;
+	align-items: center;
+}
+
+.crs-author img
+{
+	width: 20px;
+	height: auto;
+	border-radius: 50%;
+	margin-right: 6px;
 }
 
 .popular-crs-bx .crs-info .crs-students
 {
-	font: 500 12px var(--paraFont);
+	font: 600 12px var(--paraFont);
 	text-transform: capitalize;
 	padding-left: 20px;
 }
