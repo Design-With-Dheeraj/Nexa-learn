@@ -285,6 +285,32 @@ const courses = [
   
 ];
 
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        '1200': {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        '768':{
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        '620': {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+      },
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      keyboard: true,
+    });
+
 // Initial display of all courses
 displayCourses(courses);
 
