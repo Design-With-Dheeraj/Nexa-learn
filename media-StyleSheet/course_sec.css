@@ -105,13 +105,28 @@
 
     .course-categ-bx .course-categ-name
     {
-        font: 600 16px var(--paraFont);
-        line-height: 16px;
+        font: 600 16px "clash display";
+	    line-height: 14px;
+        text-align: left;
+    }
+
+    .course-categ-bx .course-categ-disc
+    {
+        font: 500 10px var(--paraFont);
+        line-height: 14px;
+        color: #8f8f8f;
+        margin: 8px 0;
+    }
+
+    .course-categ-vm-btn
+    {
+        text-align: right;
     }
 
     .course-categ-vm-btn a
     {
-        font: 700 10px var(--paraFont);
+        font: 600 10px "biennale";
+        padding: 8px 20px;
     }
 }
 
