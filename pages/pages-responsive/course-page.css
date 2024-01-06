@@ -1,0 +1,262 @@
+@media screen and (max-width: 1200px)
+{
+    .feat-card-swiper-cntn .popular-crs-bx
+    {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .featured-body-contain
+    {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .featured-body-contain .feat-filter-btn-contain
+    {
+        width: 100%;
+        gap: 0 10px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: row;
+    }
+
+    .featured-body-contain .feat-filter-btn-contain::-webkit-scrollbar
+    {
+        height: 4px;
+    }
+
+    .feat-filter-btn-contain .crs-filter-btn
+    {
+        flex: 0 0 auto;
+        width: 160px;
+        font: 600 14px var(--paraFont);
+    }
+
+    .crs-filter-btn i
+    {
+        margin-left: 8px;
+    }
+
+
+    .featured-body-contain .feat-crs-card-contain
+    {
+        width: 100%;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx
+    {
+        width: 300px;
+    }
+
+
+
+    
+
+    /*  --------- Benefit Section --------- */
+
+    .course-benefit-contain
+    {
+        flex-direction: column;
+    }
+    
+    .benefit-img-contain img
+    {
+        width: 450px;
+        height: auto;
+    }
+
+    .benefit-content-contain
+    {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .featured-page .contantPage_head .page-head-para
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx .crs-info .crs-title
+    {
+        margin-top: 10px;
+        font: 600 14px "biennale";
+        letter-spacing: .5px;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx .crs-info .crs-categ
+    {
+        padding: 4px 14px;
+        font: 600 10px var(--paraFont);
+        letter-spacing: .5px;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx .crs-categ-rating .crs-rating
+    {
+        font: 600 10px var(--paraFont);
+        color: #8f8f8f;
+    }
+
+
+
+
+
+    /*  --------- Benefit Section --------- */
+    .benefit-img-contain img
+    {
+        width: 400px;
+        height: auto;
+    }
+
+    .benefit-content-contain
+    {
+        width: 100%;
+    }
+
+    .benefit-content-bx::after
+    {
+        left: -20px;
+    }
+}
+
+
+
+@media screen and (max-width: 620px)
+{
+    .featured-body-contain
+    {
+        margin-top: 10px;
+    }
+    .featured-page .contantPage_head
+    {
+        text-align: left;
+    }
+    .featured-page .contantPage_head .page-head-para
+    {
+        width: 100%;
+    }
+
+    .feat-card-cntn-head .filt-categories
+    {
+        font: 600 16px "biennale";
+        text-transform: capitalize;
+    }
+
+    .filt-categories i
+    {
+        margin-right: 6px;
+    }
+
+    .featured-body-contain .feat-crs-card-contain
+    {
+        padding: 0;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx
+    {
+        width: 340px;
+    }
+    
+
+    .feat-filter-btn-contain .crs-filter-btn
+    {
+        width: 160px;
+        font: 600 12px var(--paraFont);
+
+        padding: 10px 8px;
+    }
+
+    .feat-card-cntn-head .swiper-btn-contain
+    {
+        gap: 0 6px;
+    }
+
+    .swiper-btn-contain .swiper-btn
+    {
+        width: 50px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 25px;
+        border-color: #00b581;
+        background-color: var(--bg-color);
+        color: #000;
+    }
+
+}
+
+@media screen and (max-width: 480px)
+{
+    .feat-filter-btn-contain .crs-filter-btn
+    {
+        width: 120px;
+        font: 600 10px var(--paraFont);
+
+        padding: 8px;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn
+    {
+        gap: 0 10px;
+    }
+
+    .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn a
+    {
+        display: block;
+        
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+    }
+
+
+
+
+    /*  --------- Benefit Section --------- */
+    
+    .benefit-img-contain img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefit-content-bx .beft-cntnt-img img
+    {
+        width: 30px;
+        height: auto;
+    }
+    .benefit-content-bx
+    {
+        padding: 10px 6px;        
+    }
+    .benefit-content-bx::after
+    {
+        font-size: 36px;
+        left: -10px;
+    }
+    
+    .benefit-content-bx .beft-cntnt-title
+    {
+        font: 800 16px "biennale";
+    }
+
+    .benefit-content-bx .beft-cntnt-text
+    {
+        font: 500 10px var(--paraFont);
+        margin-top: 2px;
+        color: #a5a5a5;
+    }
+}
