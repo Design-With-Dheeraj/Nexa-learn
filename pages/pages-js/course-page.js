@@ -285,7 +285,6 @@ const courses = [
   
 ];
 
-
 // Initial display of all courses
 displayCourses(courses);
 
