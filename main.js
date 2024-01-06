@@ -135,29 +135,49 @@ function togglePassword() {
 let crsDropbx = document.querySelectorAll('.crs-drop-bx')
 
 const plusIcon = document.getElementById('resNavDropIcon');
-const rotateBtn = document.querySelector('.dropBtn-contain');
+const rotateBtn = document.querySelector('.dropdown-btn');
 
     rotateBtn.addEventListener('click', () => {
       plusIcon.classList.toggle('iconRotate');
+      document.querySelector('.drop-link-bx').classList.toggle('crsDropActive')
     });
 
 
 
-document.querySelector('.drop-link-bx').addEventListener('click', () => {
-  document.querySelector('.drop-link-bx').classList.toggle('crsDropActive')
-})
+// const banner = document.querySelector('.home_page');
+// 		const element1 = document.querySelector('#element1');
+// 		const element2 = document.querySelector('#element2');
+// 		const element3 = document.querySelector('#element3');
+// 		const element4 = document.querySelector('#element4');
+// 		const element7 = document.querySelector('#element7');
 
+// 		const element5 = document.querySelector('#element5');
+// 		const element6 = document.querySelector('#element6')
 
+// 		document.addEventListener('mousemove', (e) => {
+// 			const largeMove_x = (e.clientX / window.innerWidth) * 100;
+// 			const largeMove_y = (e.clientY / window.innerHeight) * 100;
+
+// 			const shortMove_x = (e.clientX / window.innerWidth) * 20;
+// 			const shortMove_y = (e.clientY / window.innerHeight) * 20;
+
+// 			// Element 1 moves in the same direction as the cursor
+// 			element1.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+// 			element3.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+// 			// element7.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+			
+// 			element5.style.transform = `translate(-${shortMove_x}%, -${shortMove_y}%)`;
+// 			element6.style.transform = `translate(-${shortMove_x}%, -${shortMove_y}%)`;
+
+// 			// Element 2 moves in the opposite direction
+// 			element2.style.transform = `translate(${largeMove_x}%, ${largeMove_y}%)`;
+// 			element4.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+// 		});
 
 const banner = document.querySelector('.home_page');
-		const element1 = document.querySelector('#element1');
-		const element2 = document.querySelector('#element2');
-		const element3 = document.querySelector('#element3');
-		const element4 = document.querySelector('#element4');
-		const element7 = document.querySelector('#element7');
-
-		const element5 = document.querySelector('#element5');
-		const element6 = document.querySelector('#element6')
+		const strSide_Para = document.querySelectorAll('#strParallax');
+		const oppoSide_Para = document.querySelectorAll('#oppoParallax');
+		const miniMove_Para = document.querySelectorAll('#miniParallax');
 
 		document.addEventListener('mousemove', (e) => {
 			const largeMove_x = (e.clientX / window.innerWidth) * 100;
@@ -166,19 +186,16 @@ const banner = document.querySelector('.home_page');
 			const shortMove_x = (e.clientX / window.innerWidth) * 20;
 			const shortMove_y = (e.clientY / window.innerHeight) * 20;
 
-			// Element 1 moves in the same direction as the cursor
-			element1.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
-			element3.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
-			// element7.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
-			
-			element5.style.transform = `translate(-${shortMove_x}%, -${shortMove_y}%)`;
-			element6.style.transform = `translate(-${shortMove_x}%, -${shortMove_y}%)`;
-
-			// Element 2 moves in the opposite direction
-			element2.style.transform = `translate(${largeMove_x}%, ${largeMove_y}%)`;
-			element4.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+      strSide_Para.forEach(strPara_elem => {
+        strPara_elem.style.transform = `translate(-${largeMove_x}%, -${largeMove_y}%)`;
+      });
+      oppoSide_Para.forEach(oppoPara_elem => {
+        oppoPara_elem.style.transform = `translate(${largeMove_x}%, ${largeMove_y}%)`;
+      });
+      miniMove_Para.forEach(miniPara_elem => {
+        miniPara_elem.style.transform = `translate(-${shortMove_x}%, -${shortMove_y}%)`;
+      });
 		});
-
 
 
 
