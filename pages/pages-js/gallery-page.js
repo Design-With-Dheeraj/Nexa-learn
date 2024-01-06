@@ -34,17 +34,12 @@ function navSlideOpen() {
   let crsDropbx = document.querySelectorAll('.crs-drop-bx')
 
   const plusIcon = document.getElementById('resNavDropIcon');
-  const rotateBtn = document.querySelector('.dropBtn-contain');
-  
-      rotateBtn.addEventListener('click', () => {
-        plusIcon.classList.toggle('iconRotate');
-      });
-  
-  
-  
-  document.querySelector('.drop-link-bx').addEventListener('click', () => {
-    document.querySelector('.drop-link-bx').classList.toggle('crsDropActive')
-  })
+const rotateBtn = document.querySelector('.dropdown-btn');
+
+    rotateBtn.addEventListener('click', () => {
+      plusIcon.classList.toggle('iconRotate');
+      document.querySelector('.drop-link-bx').classList.toggle('crsDropActive')
+    });
 
 
 
