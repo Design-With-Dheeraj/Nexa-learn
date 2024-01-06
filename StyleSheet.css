@@ -1232,7 +1232,7 @@ div
 
 
 
-* ------ Course Categories Container ----- */
+/* ------ Course Categories Container ----- */
 
 .course-categ-contain
 {
@@ -1249,7 +1249,14 @@ div
 {
 	width: 360px;
 	height: auto;
+
+	background-color: #f8f2ff;
+	border-radius: 8px;
+	padding: 10px;
+	position: relative;
 }
+
+
 
 .course-categ-bx .course-categ-icon
 {
@@ -1258,6 +1265,7 @@ div
 
 	border-radius: 8px;
 	/* border: 2px solid #000; */
+	background-color: var(--bg-color);
 
 	display: flex;
 	justify-content: center;
@@ -1273,38 +1281,52 @@ div
 .course-categ-bx .categ-name
 {
 	width: 100%;
-	
-	border: 2px solid #dedede;
-	border-radius: 8px;
 
-	padding: 8px 0;
-	margin-top: 10px;
+	border-radius: 8px;
+	background-color: var(--bg-color);
+	padding: 10px;
+	margin-top: 4px;
 }
 
 .course-categ-bx .course-categ-name
 {
-	font: 600 18px var(--paraFont);
+	font: 600 20px "clash display";
 	line-height: 18px;
 	text-align: center;
 	text-transform: capitalize;
+	letter-spacing: .5px;
 }
 
-.course-categ-bx .course-categ-vm-btn
+.course-categ-bx .course-categ-disc
+{
+	font: 500 12px var(--paraFont);
+	line-height: 16px;
+	color: #8f8f8f;
+	margin: 10px 0;
+}
+
+.course-categ-vm-btn
 {
 	text-align: center;
-	margin-top: 2px;
 }
 
 .course-categ-vm-btn a
 {
-	color: rgb(100, 100, 100);
-	font: 600 12px var(--paraFont);
+	font: 600 10px "biennale";
 
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 1px;
-}
+	text-align: center;
+	letter-spacing: 0.9px;
 
+	display: inline-block;
+	padding: 8px 24px;
+	
+	background-color: transparent;
+	border: 1px solid #a5a5a5;
+	color: var(--primary-color-purple);
+	border-radius: 6px;
+}
 
 
 
