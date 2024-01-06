@@ -355,7 +355,7 @@ function displayCourses(coursesToShow) {
   }
 
   // Update Swiper after dynamically adding slides
-  // swiper.update();
+  swiper.update();
 }
 
 
