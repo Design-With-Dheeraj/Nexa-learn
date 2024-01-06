@@ -288,7 +288,7 @@ const courses = [
 // Initial display of all courses
 displayCourses(courses);
 // Update Swiper after dynamically adding slides
-  swiper.update();
+  // swiper.update();
 
 // Function to filter and display courses based on category
 function filterCards(category) {
