@@ -136,6 +136,14 @@ function togglePassword() {
   });
 
 
+  // NavBar Btn
+let joinNow = document.getElementById('joinNow');
+
+joinNow.addEventListener('click', function() {
+  window.location.href = 'register-form.html';
+})
+
+
 
 // Book Seat Page Btn
 let contactbtn = document.getElementById('abo-bann-contactBtn');
