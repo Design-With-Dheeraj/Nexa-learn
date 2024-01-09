@@ -142,3 +142,10 @@ nextBtn.addEventListener('click', nextSlide);
 
 updateSlidePosition();
 
+
+// NavBar Btn
+let joinNow = document.getElementById('joinNow');
+
+joinNow.addEventListener('click', function() {
+  window.location.href = 'register-form.html';
+})
