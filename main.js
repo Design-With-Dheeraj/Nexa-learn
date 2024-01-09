@@ -199,11 +199,19 @@ const banner = document.querySelector('.home_page');
 
 
 
-// Main Page Banner Btn
-let joinBtn = document.getElementById('joinBtn');
+// NavBar Btn
+let joinNow = document.getElementById('joinNow');
 
-joinBtn.addEventListener('click', function() {
-  window.location.href = 'contact-page.html';
+joinNow.addEventListener('click', function() {
+  window.location.href = 'register-form.html';
+})
+
+
+// Main Page Banner Btn
+let exploreCourse = document.getElementById('expCourse');
+
+exploreCourse.addEventListener('click', function() {
+  window.location.href = 'course-page.html';
 })
 
 
