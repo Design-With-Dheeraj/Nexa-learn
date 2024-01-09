@@ -139,3 +139,11 @@ const slider = document.querySelector('.slider');
     }
 
     updateSlider();
+
+
+// NavBar Btn
+let joinNow = document.getElementById('joinNow');
+
+joinNow.addEventListener('click', function() {
+  window.location.href = 'register-form.html';
+})
