@@ -150,3 +150,9 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 });
 
+// NavBar Btn
+let joinNow = document.getElementById('joinNow');
+
+joinNow.addEventListener('click', function() {
+  window.location.href = 'register-form.html';
+})
