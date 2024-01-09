@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register From | Nexa-Learn</title>
+    <link rel="icon" href="img/logo_title.png">
+
+    <!-- Link Main StyleSheet CSS -->
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="media-StyleSheet/formResponsive.css">
+
+    <!-- Link FontAwesome Kit -->
+	<script src="https://kit.fontawesome.com/a656fffa44.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="forms-contain h-100">
+		<div class="page-center h-100">
+			<div class="formContainer h-100">
+                <div class="form-head">
+                    <div class="form-head-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="#"></a>
+                    </div>
+                    <div class="form-head-home"><a href="index.html">home</a></div>
+                </div>
+                <div class="form-page-data-area form-page-contains h-100">
+                    <div class="formContain">
+                        <div class="formTitle">enroll now</div>
+                        <div class="formInputs">
+                            <div class="form-name-input input-cntnt">
+                                <div class="input-bx">
+                                    <input type="text" name="" id="input-First-Name" class="name-input" placeholder="First Name" required>
+                                    <input type="text" name="" id="input-Last-Name" class="name-input" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="form-email-input input-cntnt">
+                                <input type="email" id="inputEmail" placeholder="Enter Email Here: (example@info.com)" required>
+                            </div>
+                            <div class="form-number-input input-cntnt">
+                                <input type="number" id="inputNumber" class="inputNumber" placeholder="Enter Contact Number Here: (9191 919 191)" required>
+                            </div>
+                        </div>
+                        <div class="form-crs-drpdown">
+                            <select name="courses" id="crs-drpdwn" data-none-selected-text="Select Course" required>
+                                <option value selected>Select Course</option>
+                                <option value="design">designing</option>
+                                <option value="design">designing</option>
+                                <option value="design">designing</option>
+                                <option value="design">designing</option>
+                                <option value="design">designing</option>
+                            </select>
+                            <span class="inpur-error" id="error-message">Please fill in all fields with valid data<sup>*</sup></span>
+                        </div>
+                        <div class="form-send-btn">
+                            <button onclick="validateForm()">submit<i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-page-img-area form-page-contains h-100">
+                    <div class="form-page-img">
+                        <lottie-player class="lottie-player player-comp" src="https://assets-global.website-files.com/5dd3495558fd7f3d1fcb52bc/61a0a4e3dac1d380fa90bf0c_Collaboration.json" background="transparent" style="width: 380px; height: auto;" speed="1" loop autoplay></lottie-player>
+                        <lottie-player class="lottie-player player-tab" src="https://assets-global.website-files.com/5dd3495558fd7f3d1fcb52bc/61a0a4e3dac1d380fa90bf0c_Collaboration.json" background="transparent" style="width: 340px; height: auto;" speed="1" loop autoplay></lottie-player>
+                        <lottie-player class="lottie-player player-Mobile" src="https://assets-global.website-files.com/5dd3495558fd7f3d1fcb52bc/61a0a4e3dac1d380fa90bf0c_Collaboration.json" background="transparent" style="width: 100%; height: auto;" speed="1" loop autoplay></lottie-player>
+                    </div>
+                    <div class="form-img-content">
+                        <img src="img/form-text-img.png" alt="">
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        function validateForm() {
+            let firstName = document.getElementById('input-First-Name').value;
+            let lastName = document.getElementById('input-Last-Name').value;
+            let email = document.getElementById('inputEmail').value;
+            let contact = document.getElementById('inputNumber').value;
+            let option = document.getElementById('crs-drpdwn').value;
+
+            let errorMessage = document.getElementById('error-message');
+
+            let emailValMethod = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let contactValMethod = /^\d{10}$/;
+
+            if (firstName === '' || lastName === '' || !email.match(emailValMethod) || !contact.match(contactValMethod) || option === '') {
+                errorMessage.style.display = 'block';
+                errorMessage.innerHTML = 'Please fill in all fields with valid data'
+            }
+            else {
+                errorMessage.style.display = 'none';
+                console.log("Submit! Successfully.")
+                window.location.href = 'index.html'
+            }
+        }
+    </script>
+
+
+</body>
+</html>
