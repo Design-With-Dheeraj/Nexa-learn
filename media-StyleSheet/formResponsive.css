@@ -1,157 +1,59 @@
-@media screen and (max-width: 1300px)
-{
-    .webForms
-    {
-        width: 80%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 1200px)
-{
-    .imgSection img
-    {
-        width: 420px;
-    }
-}
-
 @media screen and (max-width: 1024px)
 {
-    .webForms
+    .form-page-data-area .formContain
     {
-        width: 94%;
+        width: 320px;
+    }
+    
+    .player-tab
+    {
+        display: block;
     }
 
-    .imgSection img
+    .player-comp, .player-Mobile
     {
-        width: 360px;
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px)
 {
-    .webForms
+    .h-100
     {
+        height: auto;
+    }
+
+    .formContainer
+    {
+        height: auto;
         flex-direction: column;
-        height: 80%;
-
-        overflow: visible;
     }
 
-    .webForms .imgSection
+    .form-page-data-area .formContain
     {
-        width: 100%;
-        height: 30%;
-        border-radius: 12px 12px 0 0;
-        z-index: 1;
-    }
-
-    .imgSection img
-    {
-        width: 240px;
-        height: auto;
-    }
-
-    .webForms .contentSection
-    {
-        width: 100%;
-        height: 68%;
-        padding: 0px 40px 20px;
-        z-index: 9;
-    }
-
-    .webForms .formHead span
-    {
-        font: 600 28px "clash display";
-    }
-
-    .webForms form
-    {
-        margin-top: 0px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .formLogo img
-    {
-        width: 60px;
-        height: auto;
-    }
-
-    .webForms form .formGroup
-    {
-        margin: 0 0 10px;
-    }
-    
-    .formSubmit .formSubmit_btn
-    {
-        width: 40%;
-        height: 28px;
-    }
-
-    .contentSection .logInWith_area .logInWith_head
-    {
-        font: 500 12px "clash display";
-    }
-
-    .logInWith_area .logInWith_icon
-    {
-        margin-top: 6px;
-    }
-
-    .logInWith_area .logInWith_icon a
-    {
-        margin: 0 8px;
-    }
-
-    .logInWith_area .logInWith_icon a img
-    {
-        width: 20px;
+        margin: 80px 0 20px;
     }
 }
 
 @media screen and (max-width: 480px)
 {
-    .webForms .formHead span
+    .form-head
     {
-        font: 600 22px "clash display";
+        padding: 0;
     }
 
-    .imgSection img
-    {
-        width: 220px;
-        height: auto;
-    }
-
-    .webForms .contentSection
-    {
-        padding: 0 20px 20px;
-    }
-
-    .webForms form
+    .form-page-data-area .formContain
     {
         width: 100%;
     }
-
-    .formGroup label
+    
+    .player-Mobile
     {
-        font: 500 12px var(--paraFont);
+        display: block;
     }
 
-    .formGroup label img
+    .player-comp, .player-tab
     {
-        width: 12px;
-        margin-right: 4px;
-    }
-
-    .formSubmit .formSubmit_btn
-    {
-        width: 60%;
-        height: 28px;
-    }
-
-    .contentSection .formSubmit
-    {
-        margin-bottom: 10px;
+        display: none;
     }
 }
