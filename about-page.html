@@ -51,7 +51,7 @@
               </ul>
               <ul class="navLinks_Right">
                 <div class="signUp_btn_main" id="logIn_formOpen" onclick="logIn_open()">
-                  <div class="content_button">log in / register</div>
+                  <div class="content_button" id="joinNow">enroll now</div>
                 </div>
               </ul>
               <!-- Responsive NavBar Open Btn -->
@@ -611,123 +611,9 @@
 			</div>
 		</div>
 		<div class="mobNav-btn">
-			<div onclick="logIn_open()">
-				<a href="#">log in</a>
-			</div>
+				<a href="register-form.html">enroll now</a>
 		</div>
 	</div>
-
-  <div class="formContainars">
-    <div class="fade" onclick="formClose()"></div>
-    <div class="logIn_form webForms" id="LogInForm">
-      <div class="imgSection">
-        <img src="img/logIn_img.png" alt="">
-      </div>
-      <div class="contentSection">
-        <div class="formHead">
-          <span>log in</span>
-          <div class="formClose">
-            <div class="formLogo">
-              <img src="img/logo.png" alt="">
-            </div>
-            <div class="formClose_btn" onclick="formClose()">
-              <button>close <i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </div>
-        </div>
-        <form id="webFormContent">
-          <div class="formGroup">
-            <label for="email"><img src="img/formUser_icon.png" alt=""></i>email</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="formGroup">
-            <label for="password"><img src="img/formKey_icon.png" alt="">password</label>
-            <div class="passInput">
-              <input type="password" name="password" id="password">
-              <div class="passInput_icon password_toggle" onclick="togglePassword()">
-                <i class="far fa-eye"></i>
-                <i class="far fa-eye-slash"></i>
-              </div>
-            </div>
-            <div class="forgetPassword">
-              <a href="#">forget your password ?</a>
-            </div>
-          </div>
-        </form>
-        <div class="formSubmit">
-          <button class="formSubmit_btn">login</button>
-        </div>
-        <div class="breakForm">or</div>
-        <div class="logInWith_area">
-          <div class="logInWith_head">log in with</div>
-          <div class="logInWith_icon">
-            <a href="#"><img src="img/google_icon.png" alt="Goole"></a>
-            <a href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
-            <a href="#"><img src="img/twitter_icon.png" alt="Twitter"></a>
-          </div>
-        </div>
-        <div class="breakForm">or</div>
-        <div class="signUp_area">
-          <a href="#" onclick="signIn_open()">don't have an account? register here</a>
-        </div>
-      </div>
-    </div>
-    <div class="SignIn_form webForms" id="SignInForm">
-      <div class="imgSection">
-        <img src="img/signIn_img.webp" alt="">
-      </div>
-      <div class="contentSection">
-        <div class="formHead">
-          <span>sign in</span>
-          <div class="formClose">
-            <div class="formLogo">
-              <img src="img/logo.png" alt="">
-            </div>
-            <div class="formClose_btn" onclick="formClose()">
-              <button>close <i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </div>
-        </div>
-        <form id="webFormContent">
-          <div class="formGroup">
-            <label for="fullname"><img src="img/formUser_icon.png" alt=""></i>full name</label>
-            <input type="text" name="full-name" id="full_name">
-          </div>
-          <div class="formGroup">
-            <label for="email"><img src="img/formMail_icon.png" alt=""></i>email</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="formGroup">
-            <label for="password"><img src="img/formKey_icon.png" alt="">password</label>
-            <div class="passInput">
-              <input type="password" name="password" id="password">
-              <div class="passInput_icon password_toggle" onclick="togglePassword()">
-                <i class="far fa-eye"></i>
-                <i class="far fa-eye-slash"></i>
-              </div>
-            </div>
-          </div>
-          <div class="formGroup">
-            <label for="confirm_password"><img src="img/formKey_icon.png" alt="">confirm password</label>
-            <div class="passInput">
-              <input type="password" name="confirm_password" id="confirm_password">
-              <div class="passInput_icon password_toggle" onclick="togglePassword()">
-                <i class="far fa-eye"></i>
-                <i class="far fa-eye-slash"></i>
-              </div>
-            </div>
-          </div>
-        </form>
-        <div class="formSubmit">
-          <button class="formSubmit_btn">login</button>
-        </div>
-        <div class="breakForm">or</div>
-        <div class="signUp_area">
-          <a href="#" onclick="logIn_open()">already have an account? login here</a>
-        </div>
-      </div>
-    </div>
-  </div> 
 
 <script type="text/javascript" src="/pages/pages-js/about-page.js"></script>
 
