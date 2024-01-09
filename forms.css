@@ -1,380 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-:root
+body, html 
 {
-	--bg-color: #ffffff;
-
-	--primary-color-purple: #8D5AD5;
-	--primary-color-green: #0CBC8B;
-	--primary-color-lightRed: #FEADAD;
-
-	--gradient-blue: #3083DC;
-
-	--paraFont: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-/* @font-face {
-	:font-family: "Clash Display";
-    src: url("fonts/ClashDisplay_Complete/ClashDisplay-Regular.otf");
-} */
-
-.fade
+.h-100
 {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    height: 100%;
+}
+
+.formContainer
+{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.form-head
+{
+    position: absolute;
     left: 0;
     right: 0;
-
-    background: rgba(35, 35, 35, 0.8);
-    z-index: 99999;
-
-    display: none;
-}
-
-.webForms
-{
-    position: fixed;
-    top: -20%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.2);
-
-    background-color: var(--bg-color);
-
-    width: 900px;
-    height: auto;
-
-    border-radius: 12px;
-    outline: 4px solid var(--bg-color);
-    outline-offset: 4px;
-    
-    transition: 0.5s, opacity 300ms ease-in-out;
-
-    z-index: 999999;
+    top: 10px;
 
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-}
-
-
-.webForms .imgSection
-{
-    width: 40%;
-    background-color: #ffe7e7;
-
-    display: flex;
-    justify-content: center;
     align-items: center;
+
+    padding: 0 20px;
 }
 
-.imgSection img
+.form-head .form-head-logo a img
 {
-    width: 450px;
+    width: 80px;
     height: auto;
 }
 
-.webForms .contentSection
+.form-head .form-head-home a
 {
-    width: 60%;
-    padding: 20px 40px;
-
-    position: relative;
-}
-
-.webForms .contentSection
-{
-    overflow-y: scroll;
-}
-
-.webForms .contentSection::-webkit-scrollbar
-{
-    display: none;
-}
-
-.webForms .formHead
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.webForms .formHead span
-{
-    font: 700 32px "clash display";
+    font: 600 12px "biennale";
     text-transform: capitalize;
-}
-
-.contentSection .formClose
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.formClose .formLogo
-{
-    padding-right: 10px;
-}
-
-.formLogo img
-{
-    width: 60px;
-    height: auto;
-}
-
-.formClose .formClose_btn button
-{
-    font: 500 12px var(--paraFont);
-    text-transform: capitalize;
-    
-    background: transparent;
-    border: none;
-    border-left: 1px solid rgb(210, 210, 210);
-
-    cursor: pointer;
-    padding : 8px 0 8px 10px;
-}
-
-.webForms form
-{
-    margin-top: 18px;
-}
-
-.webForms form .formGroup
-{
-    display: flex;
-    flex-direction: column;
-
-    margin: 14px 0;
-}
-
-.formGroup label
-{
-    font: 500 14px var(--paraFont);
-    text-transform: capitalize;
-
-    margin-bottom: 4px;
-
-    display: flex;
-    align-items: center;
-}
-
-.formGroup label img
-{
-    width: 16px;
-    height: auto;
-    margin-right: 8px;
-}
-
-.formGroup input
-{
-    width: 100%;
-    height: 34px;
-
-    border-radius: 6px;
-    border: none;
-    outline: none;
-
-    padding: 0 10px;
-    margin-top: 4px;
-
-    font: 500 14px var(--paraFont);
-
-    background-color: transparent;
-    outline: 2px solid #8d5ad576;
-    outline-offset: 3px;
-    overflow: hidden;
-}
-
-.formGroup input:focus
-{
-    outline: 2px solid #8d5ad5;
-}
-
-.passInput
-{
-    position: relative;
-}
-
-.passInput .passInput_icon
-{
-    width: 50px;
-    /* height: 100%; */
-
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.passInput_icon i
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    cursor: pointer;
-}
-
-.passInput_icon .fa-eye
-{
-    display: none;
-}
-
-.passInput_icon .fa-eye-slash
-{
-    display: block;
-}
-
-.formGroup .forgetPassword
-{
-    opacity: 0.7;
-    margin-top: 6px;
-    text-align: right;
-}
-
-.forgetPassword a
-{
-    font: 500 12px var(--paraFont);
-    text-transform: capitalize;
+    letter-spacing: 2px;
     text-decoration: none;
+    text-align: center;
+
+    padding: 2px 0;
+
     color: #000;
-}
-
-.contentSection .formSubmit
-{
-    width: 100%;
-    text-align: center;
-}
-
-
-.formSubmit .formSubmit_btn
-{
-    width: 50%;
-    height: 32px;
-
-    border: none;
-    background-color: transparent;
-    border-radius: 35px;
-
-    outline: 2px solid var(--primary-color-purple);
-    outline-offset: 3px;
-
-    font: 600 14px var(--paraFont);
-    text-transform: capitalize;
-    color: var(--primary-color-purple);
-
-    transition: 0.3s;
-}
-
-.formSubmit .formSubmit_btn:hover
-{
-    background-color: var(--primary-color-purple);
-    color: var(--bg-color);
-}
-
-.contentSection .breakForm
-{
-    text-align: center;
-    text-transform: uppercase;
-    font: 600 12px var(--paraFont);
-
-    margin: 8px 0;
-    opacity: 0.6;
     position: relative;
 }
 
-.contentSection .breakForm::before,.breakForm::after
+.form-head .form-head-home a::after
 {
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    left: 0;
+    top: 0;
 
-    width: 36%;
-    height: .5px;
+    width: 22%;
+    height: 1px;
 
     background-color: #000;
-    opacity: 0.3;
+    transition: 0.5s;
 }
 
-.breakForm::before
+.form-head .form-head-home a:hover::after
 {
-    left: 10%;
+    width: 80%;
 }
 
-.breakForm::after
+.formContainer .form-page-contains
 {
-    right: 10%;
-}
-
-.contentSection .logInWith_area .logInWith_head
-{
-    font: 600 14px "clash display";
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.logInWith_area .logInWith_icon
-{
+    width: 100%;
+    
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.form-page-data-area .formContain
+{
+    width: 360px;
+    /* border: 1px solid rgb(255, 212, 212); */
+}
+
+.formContain .formTitle
+{
+    font: 600 20px "biennale";
+    text-transform: capitalize;
+
+    padding-left: 40px;
+
+    position: relative;
+}
+
+.formContain .formTitle::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 4px;
+
+    background-color: var(--primary-color-green);
+    border-radius: 35px;
+}
+
+
+
+.formContain .formInputs
+{
+    margin: 10px 0;
+}
+
+.formInputs .input-cntnt
+{
     margin-top: 10px;
 }
 
-.logInWith_area .logInWith_icon a
+.form-name-input .input-bx
 {
-    margin: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0 10px;
 }
 
-.logInWith_area .logInWith_icon a img
+.formInputs input
 {
-    width: 30px;
-    height: auto;
+    width: 100%;
+    height: 46px;
+
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+
+    font: 500 12px var(--paraFont);
+    outline: none;
+
+    padding: 0 8px;
+    margin-top: 2px;
 }
 
-.contentSection .signUp_area
+.inpur-error
 {
+    font: 500 12px var(--paraFont);
+    text-transform: capitalize;
+    color: red;
+    padding-left: 5px;
+
+    display: none;
+}
+
+.formInputs .inputNumber::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+.form-crs-drpdown
+{
+    margin-top: 10px;
+}
+
+.form-crs-drpdown select
+{
+    width: 100%;
+    height: 46px;
+
+    font: 500 12px var(--paraFont);
+
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 4px;
+}
+
+.form-crs-drpdown select option
+{
+    border: none;
+}
+
+.form-send-btn
+{
+    margin-top: 16px;
     text-align: center;
 }
 
-.contentSection .signUp_area a
+.form-send-btn button
 {
-    font: 400 12px var(--paraFont);
+    width: 180px;
+    height: 38px;
+
+    border-radius: 6px;
+    border: 2px solid var(--primary-color-purple);
+    background-color: var(--primary-color-purple);
+
+    font: 600 12px "biennale";
     text-transform: capitalize;
-    color: rgb(80, 80, 80);
+    letter-spacing: 1px;
+
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-
-
-
-
-/* ------ Sign In Form --------- */
-
-.SignIn_form .imgSection
+.form-send-btn button i
 {
-    background-color: #dec6ff;
+    margin-left: 6px;
 }
 
-.SignIn_form .formSubmit .formSubmit_btn
+.form-send-btn button:hover
 {
-    margin-top: 12px;
+    background-color: transparent;
+    color: #000;
 }
 
 
 
 
+.formContainer .form-page-img-area
+{
+    background-color: #f2f9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.fade_open
+.player-comp
 {
     display: block;
 }
 
-.logIn_open, .SignIn_open
+.player-tab, .player-Mobile
 {
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    display: none;
+}
+
+.form-page-img-area .form-img-content
+{
+    width: 100%;
+}
+
+.form-page-img-area .form-img-content img
+{
+    width: 100%;
+    height: auto;
 }
