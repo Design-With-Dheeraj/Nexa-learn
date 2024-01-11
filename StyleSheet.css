@@ -1326,8 +1326,25 @@ div
 	border: 1px solid #a5a5a5;
 	color: var(--primary-color-purple);
 	border-radius: 6px;
+	transition: 0.3s;
 }
 
+.course-categ-vm-btn a:hover
+{
+	background-color: var(--primary-color-purple);
+	border-color: var(--primary-color-purple);
+	color: var(--bg-color);
+}
+
+.course-categ-vm-btn a i
+{
+	transition: .3s;
+}
+
+.course-categ-vm-btn a:hover i
+{
+	transform: translateX(6px);
+}
 
 
 
