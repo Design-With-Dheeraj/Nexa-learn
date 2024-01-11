@@ -1866,18 +1866,21 @@ div
 
 
 
+
 /* ----- Leader Page Code Start -------- */
 
 .leader_card_container
 {
 	margin-top: 30px;
 	position: relative;
+	/* overflow: hidden; */
 }
 
 .swiper-wrapper 
 {
 	display: flex;
 	transition: transform 0.3s ease-in-out;
+	/* overflow: hidden; */
 }
 
 .leaderParticles
@@ -1922,9 +1925,9 @@ div
 	background: linear-gradient(to left, rgba(251, 255, 229, 0), rgba(255, 255, 255, 1));
 }
   
-.swiper-slide 
+.leader_card_container .swiper-slide 
 {
-/* 	flex: 0 0 100%; */
+	flex: 0 0 100%;
 	padding: 20px;
 	
 	display: flex;
