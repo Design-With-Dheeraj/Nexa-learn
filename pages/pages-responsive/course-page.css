@@ -200,27 +200,27 @@
 
 @media screen and (max-width: 480px)
 {
-/*     .feat-filter-btn-contain .crs-filter-btn
+    .feat-filter-btn-contain .crs-filter-btn
     {
         width: 120px;
         font: 600 10px var(--paraFont);
 
         padding: 8px;
-    } */
+    }
 
     .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn
     {
         gap: 0 10px;
     }
 
-/*     .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn a
+    .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn a
     {
         display: block;
         
         width: 100%;
         height: 36px;
         line-height: 36px;
-    } */
+    }
 
 
 
