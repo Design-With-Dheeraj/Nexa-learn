@@ -87,3 +87,45 @@
     width: 440px;
     height: auto;
 }
+
+
+
+
+
+
+/* ----- Category Highlight Section Code ----- */
+
+.categ-pg-highlt-contain
+{
+    width: 80%;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 20px;
+}
+
+.categ-pg-highlt-contain .categ-highlt-bx
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+    border-radius: 12px;
+    box-shadow: 6px 6px 2px #e4e4e4a1, -3px -3px 1px #f7f7f790;
+}
+
+.categ-highlt-bx span
+{
+    font: 700 42px "clash display";
+    color: var(--primary-color-green);
+}
+
+.categ-highlt-bx p
+{
+    font: 600 12px "biennale";
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
