@@ -285,77 +285,77 @@ const courses = [
   
 ];
 
-// Initial display of all courses
-displayCourses(courses);
-// Update Swiper after dynamically adding slides
-  // swiper.update();
+// // Initial display of all courses
+// displayCourses(courses);
+// // Update Swiper after dynamically adding slides
+//   // swiper.update();
 
-// Function to filter and display courses based on category
-function filterCards(category) {
-  const filteredCourses = category === 'all' ? courses : courses.filter(course => course.category === category);
-  displayCourses(filteredCourses);
-}
+// // Function to filter and display courses based on category
+// function filterCards(category) {
+//   const filteredCourses = category === 'all' ? courses : courses.filter(course => course.category === category);
+//   displayCourses(filteredCourses);
+// }
 
-// Function to display courses in the swiper container in zig-zag pattern
-function displayCourses(coursesToShow) {
-  const outputContainer = document.getElementById('outputContainer');
-  outputContainer.innerHTML = '';
+// // Function to display courses in the swiper container in zig-zag pattern
+// function displayCourses(coursesToShow) {
+//   const outputContainer = document.getElementById('outputContainer');
+//   outputContainer.innerHTML = '';
 
-  // Separate courses by category
-  const categorizedCourses = {};
-  coursesToShow.forEach(course => {
-    if (!categorizedCourses[course.category]) {
-      categorizedCourses[course.category] = [];
-    }
-    categorizedCourses[course.category].push(course);
-  });
+//   // Separate courses by category
+//   const categorizedCourses = {};
+//   coursesToShow.forEach(course => {
+//     if (!categorizedCourses[course.category]) {
+//       categorizedCourses[course.category] = [];
+//     }
+//     categorizedCourses[course.category].push(course);
+//   });
 
-  // Iterate through categories and add courses in zig-zag pattern
-  let maxCoursesCount = 0;
-  Object.values(categorizedCourses).forEach(categoryCourses => {
-    if (categoryCourses.length > maxCoursesCount) {
-      maxCoursesCount = categoryCourses.length;
-    }
-  });
+//   // Iterate through categories and add courses in zig-zag pattern
+//   let maxCoursesCount = 0;
+//   Object.values(categorizedCourses).forEach(categoryCourses => {
+//     if (categoryCourses.length > maxCoursesCount) {
+//       maxCoursesCount = categoryCourses.length;
+//     }
+//   });
 
-  for (let i = 0; i < maxCoursesCount; i++) {
-    Object.values(categorizedCourses).forEach(categoryCourses => {
-      if (categoryCourses[i]) {
-        const course = categoryCourses[i];
-        const swiperSlide = document.createElement('div');
-        swiperSlide.classList.add('swiper-slide');
+//   for (let i = 0; i < maxCoursesCount; i++) {
+//     Object.values(categorizedCourses).forEach(categoryCourses => {
+//       if (categoryCourses[i]) {
+//         const course = categoryCourses[i];
+//         const swiperSlide = document.createElement('div');
+//         swiperSlide.classList.add('swiper-slide');
 
-        const courseCard = document.createElement('div');
-        courseCard.classList.add('popular-crs-bx');
+//         const courseCard = document.createElement('div');
+//         courseCard.classList.add('popular-crs-bx');
 
-        // Course card structure
-        courseCard.innerHTML = `
-          <div class="crs-img">
-            <img src="${course.imageUrl}" alt="">
-          </div>
-          <div class="crs-info">
-            <div class="crs-categ-rating">
-              <div class="crs-categ">${course.category}</div>
-              <div class="crs-rating"><i class="fas fa-star"></i>(${course.rating} reviews)</i></div>
-            </div>
-            <div class="crs-title">${course.title}</div>
-            <div class="crs-intro">${course.intro}</div>
-            <div class="crs-author">
-              <img src="${course.author.avatar}" alt=""> by, ${course.author.name}
-            </div>
-          </div>
-          <div class="crs-box-btn">
-            <a href="#" class="crs-more-info-btn">more info</a>
-            <a href="#" class="crs-enroll-btn">enroll now</a>
-          </div>
-        `;
+//         // Course card structure
+//         courseCard.innerHTML = `
+//           <div class="crs-img">
+//             <img src="${course.imageUrl}" alt="">
+//           </div>
+//           <div class="crs-info">
+//             <div class="crs-categ-rating">
+//               <div class="crs-categ">${course.category}</div>
+//               <div class="crs-rating"><i class="fas fa-star"></i>(${course.rating} reviews)</i></div>
+//             </div>
+//             <div class="crs-title">${course.title}</div>
+//             <div class="crs-intro">${course.intro}</div>
+//             <div class="crs-author">
+//               <img src="${course.author.avatar}" alt=""> by, ${course.author.name}
+//             </div>
+//           </div>
+//           <div class="crs-box-btn">
+//             <a href="#" class="crs-more-info-btn">more info</a>
+//             <a href="#" class="crs-enroll-btn">enroll now</a>
+//           </div>
+//         `;
 
-        swiperSlide.appendChild(courseCard);
-        outputContainer.appendChild(swiperSlide);
-      }
-    });
-  }
-}
+//         swiperSlide.appendChild(courseCard);
+//         outputContainer.appendChild(swiperSlide);
+//       }
+//     });
+//   }
+// }
 
 // NavBar Btn
 let joinNow = document.getElementById('joinNow');
