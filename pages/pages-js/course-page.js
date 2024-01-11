@@ -53,8 +53,8 @@ faqItems.forEach((item) => {
     document.querySelector('.fa-eye-slash').style.display = "block";
     document.getElementById('password').type = "password";
   
-    let webForm = document.getElementById("webForms");
-    webForm.reset(); // Resets the form to its default state
+    // let webForm = document.getElementById("webForms");
+    // webForm.reset(); // Resets the form to its default state
   }
   
   function togglePassword() {
@@ -288,7 +288,7 @@ const courses = [
 // // Initial display of all courses
 // displayCourses(courses);
 // // Update Swiper after dynamically adding slides
-//   // swiper.update();
+
 
 // // Function to filter and display courses based on category
 // function filterCards(category) {
@@ -355,6 +355,8 @@ const courses = [
 //       }
 //     });
 //   }
+
+  
 // }
 
 // NavBar Btn
