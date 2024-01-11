@@ -91,6 +91,27 @@
         width: 340px;
         height: auto;
     }
+
+
+    /* ----- Category Highlight Section Code ----- */
+
+    .categ-pg-highlt-contain
+    {
+        width: 100%;
+        gap: 0 10px;
+    }
+
+    .categ-pg-highlt-contain .categ-highlt-bx
+    {
+        padding: 20px 0;
+        box-shadow: 4px 4px 2px #e4e4e4a1, -3px -3px 1px #f7f7f790;
+    }
+
+    .categ-highlt-bx span
+    {
+        font: 700 32px "clash display";
+        color: var(--primary-color-green);
+    }
 }
 
 
@@ -127,5 +148,15 @@
     {
         width: 240px;
         height: auto;
+    }
+
+    /* ----- Category Highlight Section Code ----- */
+
+    .categ-pg-highlt-contain
+    {
+        width: 90%;
+
+        flex-direction: column;
+        gap: 20px 0;
     }
 }
