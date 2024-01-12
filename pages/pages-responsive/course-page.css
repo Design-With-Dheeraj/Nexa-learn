@@ -260,3 +260,12 @@
         color: #a5a5a5;
     }
 }
+
+
+@media screen and (max-width: 420px)
+{
+    .popular-crs-bx
+    {
+        width: 100%;
+    }
+}
