@@ -37,4 +37,24 @@
     {
         width: 60px;
     }
+
+    .crs-feedbacks-swiper-contain
+    {
+        margin-top: 20px;
+    }
+
+    .feedback-card-content .feedback-name
+    {
+        font: 600 16px "biennale";
+    }
+
+    .feedback-card-content .feedback-occupation
+    {
+        font: 500 12px var(--paraFont);
+    }
+
+    .feedback-card-content .feedback-text
+    {
+        font: 500 12px var(--paraFont);
+    }
 }
