@@ -54,14 +54,92 @@
 
 
 
-
-.course-categ-courses .contantPage_head
+/* ---- Course Expert Section Code -------- */
+.crs-ctg-expert-contain .contantPage_head
 {
     text-align: center;
 }
 
-.crs-expert-card-contain img
+.crs-ctg-expert-contain .expert-card-contain
 {
-    width: 400px;
+    padding-bottom: 0;
+}
+
+
+
+/* ------ Course Feedbacks Section Code ---------- */
+.crs-feedbacks-contain .contantPage_head
+{
+    text-align: center;
+}
+
+.crs-feedbacks-swiper-contain
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.crs-feedback-card
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #a2a2a2;
+    border-radius: 12px;
+    padding: 14px 10px;
+}
+
+.quote-elem
+{
+    position: absolute;
+    font-size: 24px;
+    top: -10px;
+    left: -10px;
+}
+
+.feedback-card-img img
+{
+    width: 60px;
     height: auto;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color-green);
+}
+
+.crs-feedbacks-swiper-contain .feedback-card-content
+{
+    max-width: 560px;
+    height: auto;
+    border-radius: 8px;
+
+    position: relative;
+    text-align: center;
+}
+
+.feedback-card-content .feedback-star img
+{
+    width: 70px;
+    margin-top: 5px;
+}
+
+.feedback-card-content .feedback-name
+{
+    font: 600 18px "biennale";
+}
+
+.feedback-card-content .feedback-occupation
+{
+    font: 500 12px var(--paraFont);
+}
+
+.feedback-card-content .feedback-text
+{
+    font: 500 12px var(--paraFont);
+    line-height: 16px;
+    margin: 8px 0;
+    border-radius: 8px;
 }
