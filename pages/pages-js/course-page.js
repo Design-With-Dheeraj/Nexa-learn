@@ -111,7 +111,8 @@ const courses = [
     rating: 4.2,
     reviews: 15,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'graphic-des-crs.html'
   },
   { 
     title: 'Web Designing',
@@ -120,7 +121,8 @@ const courses = [
     rating: 4.2,
     reviews: 15,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'graphic-des-crs.html'
   },
   { 
     title: 'UI UX Fundamentals',
@@ -129,7 +131,8 @@ const courses = [
     rating: 4.2,
     reviews: 15,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'graphic-des-crs.html'
   },
 
   // Development Category Courses List ------------------>
@@ -140,7 +143,8 @@ const courses = [
     rating: 4.5,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'full-stack-dev-crs.html'
   },
   { 
     title: 'Front End Web Development',
@@ -149,7 +153,8 @@ const courses = [
     rating: 4.9,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'full-stack-dev-crs.html'
   },
   { 
     title: 'Back End Development',
@@ -158,7 +163,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'full-stack-dev-crs.html'
   },
   { 
     title: 'Python Developer',
@@ -167,7 +173,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'full-stack-dev-crs.html'
   },
   // Business Category Courses List ------------------>
   { 
@@ -177,7 +184,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'ms-office-crs.html'
   },
   { 
     title: 'Mastering Microsoft Word',
@@ -186,7 +194,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'ms-office-crs.html'
   },
   { 
     title: 'Excel Analytics',
@@ -195,7 +204,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'ms-office-crs.html'
   },
   { 
     title: 'PowerPoint Mastery',
@@ -204,7 +214,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'ms-office-crs.html'
   },
   // Marketing Category Courses List ------------------>
   { 
@@ -214,7 +225,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'digital-marketing-crs.html'
   },
   { 
     title: 'Social Media Strategy',
@@ -223,7 +235,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'digital-marketing-crs.html'
   },
   { 
     title: 'SEO Essentials Expert',
@@ -232,7 +245,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'digital-marketing-crs.html'
   },
   { 
     title: 'Content Marketing Mastery',
@@ -241,7 +255,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'digital-marketing-crs.html'
   },
   // Animation Category Courses List ------------------>
   { 
@@ -251,7 +266,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'motion-graphic-crs.html'
   },
   
   // Editing Category Courses List ------------------>
@@ -262,7 +278,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'motion-graphic-crs.html'
   }, 
   { 
     title: 'Photoshop for Beginners',
@@ -271,7 +288,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'motion-graphic-crs.html'
   },
   { 
     title: 'Illustrator for Visual Design',
@@ -280,7 +298,8 @@ const courses = [
     rating: 4.2,
     reviews: 20,
     intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti earum aliquid voluptate aperiam eveniet est iusto minima error obcaecati!',
-    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' }
+    author: { name: 'Ethan Harper', avatar: 'testimonial-page-img/review-card-avatar2.jpg' },
+    moreInfo: 'graphic-des-crs.html'
   },  
   
 ];
