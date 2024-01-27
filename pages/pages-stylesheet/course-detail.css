@@ -242,8 +242,21 @@
     display: flex;
 	justify-content: space-between;
 
-	animation: slider 10s infinite linear;
+	animation: tool-slider 10s infinite linear;
     padding: 20px 0;
+}
+
+@keyframes tool-slider 
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+
+	100%
+	{
+		transform: translateX(calc(-220px * 5));
+	}
 }
 
 .tool-scroller li
