@@ -1,6 +1,11 @@
 @media screen and (max-width: 1200px)
 {
+    /* ---- Course Certified Section Code ---- */
 
+    .crs-certified-contain
+    {
+        padding: 0 40px;
+    }
 }
 
 @media screen and (max-width: 1024px)
@@ -22,11 +27,28 @@
     {
         font: 600 14px "biennale";
     }
+
+     /* ---- Course Certified Section Code ---- */
+
+    .crs-certified-contain
+    {
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 768px)
 {
+    /* ---- Course Certified Section Code ---- */
 
+    .crs-certified-contain
+    {
+        padding: 0 0px;
+    }
+
+    .crs-certified-img video
+    {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 480px)
@@ -61,7 +83,7 @@
 
     .key-fetrs-points-contain
     {
-        margin-top: 1z0px;
+        margin-top: 10px;
     }
 
     .key-fetrs-points-contain .key-fetrs-point
@@ -155,6 +177,17 @@
         height: auto;
         aspect-ratio: 3/2;
         object-fit: contain;
+    }
+
+    /* ---- Course Certified Section Code ---- */
+    .crs-head-lptp
+    {
+        display: none;
+    }
+
+    .crs-head-mb
+    {
+        display: block;
     }
 
 }
