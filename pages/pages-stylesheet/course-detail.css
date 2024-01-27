@@ -273,3 +273,42 @@
     aspect-ratio: 3/2;
     object-fit: contain;
 }
+
+
+/* ---- Course Certified Section Code ---- */
+
+.crs-certified-contain
+{
+    padding: 0 100px;
+}
+
+.crs-certified-head img
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.crs-head-lptp
+{
+    display: block;
+}
+
+.crs-head-mb
+{
+    display: none;
+}
+
+.crs-certified-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crs-certified-img video
+{
+    width: 300px;
+    height: auto;
+    margin: 0 auto
+}
