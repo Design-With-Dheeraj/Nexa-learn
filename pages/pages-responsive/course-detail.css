@@ -1,0 +1,147 @@
+@media screen and (max-width: 1200px)
+{
+
+}
+
+@media screen and (max-width: 1024px)
+{
+    /* -- Tool Covered -- */
+    .crs-tool-cvrd-contain
+    {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .tool-img img
+    {
+        width: 100px;
+    }
+
+    .tool-cvrd-bx .tool-name
+    {
+        font: 600 14px "biennale";
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+}
+
+@media screen and (max-width: 480px)
+{
+    /* ---- Course Overview Section Code ---- */
+
+    .crs-overview-body .crs-ovrw-text
+    {
+        font: 500 14px var(--paraFont);
+        color: #9e9e9e;
+    }
+
+    .crs-key-features
+    {
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .crs-key-features .key-fetrs-head
+    {
+        font: 600 16px "biennale";
+        padding-left: 20px;
+    }
+
+    .key-fetrs-head::before
+    {
+        width: 6px;
+        height: 6px;
+        border: 4px solid var(--primary-color-green);
+    }
+
+
+    .key-fetrs-points-contain
+    {
+        margin-top: 1z0px;
+    }
+
+    .key-fetrs-points-contain .key-fetrs-point
+    {
+        border: 3px solid #eaeaea;  
+    }
+
+    .key-fetrs-point .key-fetrs-img img
+    {
+        width: 50px;
+        height: auto;
+
+        border-radius: 50%;
+        border: 3px solid #eaeaea;
+
+        padding: 5px;
+    }
+
+    .key-fetrs-body span
+    {
+        font: 600 14px var(--paraFont);
+    }
+
+
+    
+    /* ---- Course Skill And Tools Covered Section Code ----- */
+    .crs-covered-body
+    {
+        margin-top: 20px;
+    }
+
+    .crs-skill-cvrd-contain .skill-cvrd-bx
+    {
+        padding: 10px 0 10px 0px;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    .crs-skill-cvrd-contain .skill-cvrd-bx .skill-head
+    {
+        font: 600 22px var(--paraFont);
+        letter-spacing: -1px;
+        color: #ababab;
+    }
+
+    /* Tool Covered */
+    .cvrd-head
+    {
+        font: 700 16px "biennale";
+        padding: 10px 0 10px 30px;
+    }
+
+    .cvrd-head::before
+    {
+        width: 20px;
+        height: 3px;
+    }
+
+    .tool-scroller
+    {
+        width: calc(220px * 15);
+        display: flex;
+        justify-content: space-between;
+
+        animation: slider 10s infinite linear;
+        padding: 20px 0;
+    }
+
+    .tool-scroller li
+    {
+        width: 220px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .tool-scroller li img
+    {
+        width: 80px;
+        height: auto;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+
+}
