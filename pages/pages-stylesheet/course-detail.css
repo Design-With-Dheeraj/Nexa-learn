@@ -1,0 +1,262 @@
+.course-placement-partners
+{
+    background-color: #fff5f5;
+}
+
+
+
+
+
+/* ---- Course Include Section Code ---- */
+.crs-include-body
+{
+    margin-top: 20px;
+}
+
+.crs-include-body .crs-include-img-contain img
+{
+    width: 500px;
+    height: auto;
+}
+
+
+
+
+/* ---- Course Overview Section Code ---- */
+.crs-overview-body
+{
+    margin-top: 20px;
+}
+
+.crs-overview-body .crs-ovrw-text
+{
+    font: 500 16px var(--paraFont);
+    color: #9e9e9e;
+}
+
+.crs-key-features
+{
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.course-detail-banner .home_page .parallax-element
+{
+    left: -20px;
+    bottom: -400px;
+}
+
+.course-detail-banner .home_page .parallax-element img
+{
+    opacity: 1;
+}
+
+.course-detail-banner .home_page .para-elem3 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.crs-key-features .parallax-element img
+{
+	width: 160px;
+	height: auto;
+
+	opacity: 1;
+}
+
+.crs-key-features .des-elem1
+{
+    right: -20px;
+    top: -10px;
+}
+
+.crs-overview-body .para-elem1
+{
+    left: 50px;
+    top: 100%;
+}
+
+.crs-key-features .para-elem1 img
+{
+    width: 260px;
+}
+
+.crs-key-features .key-fetrs-head
+{
+    font: 600 20px "biennale";
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    padding-left: 25px;
+
+    position: relative;
+}
+
+.key-fetrs-head::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 10px;
+    height: 10px;
+
+    background-color: transparent;
+    border: 5px solid var(--primary-color-green);
+    border-radius: 50%;
+}
+
+
+.key-fetrs-points-contain
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.key-fetrs-points-contain .key-fetrs-point
+{
+    width: 400px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid #eaeaea;  
+    border-radius: 16px; 
+    backdrop-filter: blur(10px);
+}
+
+.key-fetrs-point .key-fetrs-img img
+{
+    width: 60px;
+    height: auto;
+
+    border-radius: 50%;
+    border: 5px solid #eaeaea;
+
+    padding: 5px;
+}
+
+.key-fetrs-body span
+{
+    font: 600 18px var(--paraFont);
+    text-transform: capitalize;
+    color: var(--primary-color-purple);
+}
+
+.key-fetrs-body p
+{
+    font: 500 12px var(--paraFont);
+    color: #a8a8a8;
+    padding-left: 20px;
+
+    position: relative;
+}
+
+.key-fetrs-body p::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+    /* transform: translateY(-50%); */
+
+    width: 15px;
+    height: 2px;
+
+    background-color: var(--primary-color-lightRed);
+}
+
+
+
+/* ---- Course Skill And Tools Covered Section Code ---- */
+/* Skill Covered */
+
+.crs-covered-body
+{
+    margin-top: 10px;
+}
+
+.crs-skill-cvrd-contain .skill-cvrd-bx
+{
+    padding: 20px 0 20px 50px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.crs-skill-cvrd-contain .skill-cvrd-bx .skill-head
+{
+    font: 600 28px var(--paraFont);
+    letter-spacing: -1px;
+    color: #ababab;
+}
+
+/* Tool Covered */
+.crs-tool-cvrd-contain
+{
+    margin-top: 20px;
+}
+
+.cvrd-head
+{
+    font: 700 20px "biennale";
+    padding: 10px 0 10px 40px;
+    letter-spacing: 1px;
+
+    position: relative;
+    /* text-align: center; */
+}
+
+.cvrd-head::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 3px;
+
+    background-color: var(--primary-color-green);
+}
+
+.tool-scroll-contain
+{
+    width: 100%;
+    border-radius: 12px;
+    background-color: #252a2f;
+    overflow: hidden;
+}
+
+.tool-scroller
+{
+    width: calc(220px * 15);
+    display: flex;
+	justify-content: space-between;
+
+	animation: slider 10s infinite linear;
+    padding: 20px 0;
+}
+
+.tool-scroller li
+{
+    width: 220px;
+	text-align: center;
+	list-style: none;
+}
+
+.tool-scroller li img
+{
+    width: 140px;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
