@@ -365,4 +365,16 @@
         width: 100%;
     }
 
+    
+    .expert-card-img img
+    {
+        filter: saturate(100%);
+    }
+
+    .expert-card:hover .expert-card-img img
+    {
+    filter: saturate(100%);
+    transform: scale(1);
+    }
+
 }
