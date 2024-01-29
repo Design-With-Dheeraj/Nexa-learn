@@ -312,3 +312,118 @@
     height: auto;
     margin: 0 auto
 }
+
+/* ---- Course Feedbacks Section Code ---- */
+.crs-feedback-contain .contantPage_head
+{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.crs-feedback-slider-contain
+{
+    margin-top: 40px;
+}
+
+.crs-slide-card-contain
+{
+    width: calc(420px * 15);
+    display: flex;
+    justify-content: space-between;
+    animation: upperFeedbk-scroll 15s linear infinite;
+}
+
+@keyframes upperFeedbk-scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-420px * 5));
+    }
+}
+
+.crs-feedback-lower
+{
+    margin-top: 20px;
+    
+    animation: lowerFeedbk-scroll 15s linear infinite;
+    /* transform: translateX(-400px); */
+}
+
+@keyframes lowerFeedbk-scroll {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(calc(-420px * 5 - 200px));
+    }
+}
+
+.crs-slide-card-contain li
+{
+    width: 420px;
+	list-style: none;
+}
+
+.crs-slide-card-contain li .crs-detail-feedback-card
+{
+    width: 400px;
+    height: auto;
+
+    background-color: #efefef;
+    border-radius: 16px;
+    padding: 20px 20px 10px;
+}
+
+.crs-detail-feedback-card .feedbk-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedbk-head img
+{
+    width: 20px;
+    height: auto;
+}
+
+.crs-detail-feedback-card .feedback-text
+{
+    font: 500 14px var(--paraFont);
+    line-height: 20px;
+
+    margin-top: 10px;
+}
+
+.feedback-student
+{
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.feedback-student .feedbk-sdnt-img img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.feedbk-sdnt-name
+{
+    margin-left: 10px;
+    font: 600 12px "biennale";
+}
+
+.feedbk-sdnt-name .sdnt-name
+{
+    font-size: 14px;
+}
+
+.feedbk-sdnt-name .sdnt-desig
+{
+    color: #858585;
+}
