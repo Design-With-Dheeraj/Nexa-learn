@@ -34,6 +34,12 @@
     {
         padding: 0 10px;
     }
+
+    /* ---- Course Feedbacks Section Code ---- */
+    .crs-feedback-contain .contantPage_head
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -48,6 +54,12 @@
     .crs-certified-img video
     {
         width: 200px;
+    }
+
+    /* ---- Course Feedbacks Section Code ---- */
+    .crs-feedback-contain .contantPage_head
+    {
+        text-align: left;
     }
 }
 
@@ -188,6 +200,75 @@
     .crs-head-mb
     {
         display: block;
+    }
+
+    /* ---- Course Feedbacks Section Code ---- */
+    
+    .crs-feedback-slider-contain
+    {
+        margin-top: 20px;
+    }
+
+    .crs-slide-card-contain
+    {
+        width: calc(360px * 15);
+        animation: upperFeedbk-scroll 20s linear infinite;
+    }
+
+    @keyframes upperFeedbk-scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-360px * 5));
+        }
+    }
+
+    .crs-feedback-lower
+    {
+        animation: lowerFeedbk-scroll 20s linear infinite;
+    }
+
+    @keyframes lowerFeedbk-scroll {
+        0%{
+            transform: translateX(-200px);
+        }
+        100%{
+            transform: translateX(calc(-360px * 5 - 200px));
+        }
+    }
+
+    .crs-slide-card-contain li
+    {
+        width: 360px;
+    }
+
+    .crs-slide-card-contain li .crs-detail-feedback-card
+    {
+        width: 340px;
+    }
+
+    .crs-detail-feedback-card .feedback-text
+    {
+        font: 500 12px var(--paraFont);
+        line-height: 18px;
+    }
+
+    .feedback-student .feedbk-sdnt-img img
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feedbk-sdnt-name
+    {
+        margin-left: 10px;
+        font: 600 12px "biennale";
+    }
+
+    .feedbk-sdnt-name .sdnt-name
+    {
+        font-size: 13px;
     }
 
 }
