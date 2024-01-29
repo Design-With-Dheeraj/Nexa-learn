@@ -821,7 +821,7 @@ div
 	z-index: -2;
 }
 
-.parallax-element img
+.home_page .parallax-element img
 {
 	width: 160px;
 	height: auto;
@@ -829,29 +829,29 @@ div
 	opacity: 0.6;
 }
 
-.des-elem1 {
+.home_page .des-elem1 {
     top: 100px;
     left: -40px;
 }
 
-.des-elem2 {
+.home_page .des-elem2 {
     bottom: 0;
     right: 0;
 }
 
-.des-elem3
+.home_page .des-elem3
 {
 	left: 40%;
 	top: 50%;
 }
 
-.des-elem3 img
+.home_page .des-elem3 img
 {
 	width: 880px;
 	height: auto;
 }
 
-.des-elem4
+.home_page .des-elem4
 {
 	top: 85%;
 	left: 88%;
@@ -859,7 +859,7 @@ div
 	z-index: -1;
 }
 
-.des-elem4 img
+.home_page .des-elem4 img
 {
 	width: 80px;
 	opacity: 1;
