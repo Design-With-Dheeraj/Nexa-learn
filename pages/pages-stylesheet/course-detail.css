@@ -259,6 +259,45 @@
 	}
 }
 
+
+.full-stack-scroller
+{
+    width: calc(220px * 27);
+    animation: full-stack-tool-slider 15s infinite linear;
+}
+
+@keyframes full-stack-tool-slider 
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+
+	100%
+	{
+		transform: translateX(calc(-220px * 9));
+	}
+}
+
+.digit-markt-scroller
+{
+    width: calc(220px * 24);
+    animation: digit-markt-tool-slider 10s linear infinite;
+}
+
+@keyframes digit-markt-tool-slider 
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+
+	100%
+	{
+		transform: translateX(calc(-220px * 8));
+	}
+}
+
 .tool-scroller li
 {
     width: 220px;
