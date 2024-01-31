@@ -2503,17 +2503,14 @@ div
 
 .chatCard .chatCard_btn button
 {
-	padding: 6px 52px;
+	padding: 10px 52px;
 
-	border-radius: 35px;
-	border: none;
+	border-radius: 6px;
+	border: 2px solid var(--primary-color-purple);
 	cursor: pointer;
 
-	background-color: #8d5ad5a2;
+	background-color: #8d5ad5;
 	color: var(--bg-color);
-
-	outline: 2px solid var(--primary-color-purple);
-	outline-offset: 4px;
 
 	font: 500 12px var(--paraFont);
 
@@ -2522,7 +2519,7 @@ div
 
 .chatCard_btn button:hover
 {
-	background-color: transparent;
+	background: transparent;
 	color: var(--primary-color-purple);
 }
 
