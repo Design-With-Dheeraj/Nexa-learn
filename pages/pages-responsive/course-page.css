@@ -200,12 +200,22 @@
 
 @media screen and (max-width: 480px)
 {
+    .feat-card-cntn-head
+    {
+        margin-top: 10px;
+    }
+    
     .feat-filter-btn-contain .crs-filter-btn
     {
-        width: 120px;
-        font: 600 10px var(--paraFont);
+        width: 130px;
+        font: 600 12px var(--paraFont);
 
         padding: 8px;
+    }
+
+    .swiper-btn-contain .swiper-btn
+    {
+        width: 60px;
     }
 
     .feat-card-swiper-cntn .popular-crs-bx .crs-box-btn
