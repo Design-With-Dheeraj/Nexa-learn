@@ -120,7 +120,7 @@ const slider = document.querySelector('.slider');
     function updateSlider() {
       const slideWidth = 100; // 100% for full-width slides
         slides.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
-        counter.textContent = `${currentIndex + 4}`;
+        counter.textContent = `0${currentIndex + 4}`;
 
         if (currentIndex === 0) {
           prevButton.style.opacity = 0.5;
