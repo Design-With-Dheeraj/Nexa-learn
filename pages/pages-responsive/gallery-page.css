@@ -196,6 +196,13 @@
         height: 180px;
     }
 
+    .gallery-slider-btn
+    {
+        position: absolute;
+        left: 0px;
+        top: -50px;
+    }
+
     .gallery-slider-btn button img
     {
         width: 30px;
