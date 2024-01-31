@@ -215,6 +215,25 @@
         }
     }
 
+    .ms-ofc-scroller
+    {
+        width: calc(110px * 21);
+        animation: digit-markt-tool-slider 10s linear infinite;
+    }
+
+    @keyframes digit-markt-tool-slider 
+    {
+        0%
+        {
+            transform: translateX(0);
+        }
+
+        100%
+        {
+            transform: translateX(calc(-110px * 7));
+        }
+    }
+
     .tool-scroller li
     {
         width: 110px;
